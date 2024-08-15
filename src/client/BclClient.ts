@@ -58,6 +58,9 @@ export class BclClient {
         });
     };
 
+    /**
+     * Returns buy operation status by tx hash of message hash
+     */
     fetchBuyStatus = async (coinAddress: Address, txHash: string) => {
         let res;
         try {
@@ -70,13 +73,7 @@ export class BclClient {
             return "in_progress";
         }
 
-        const masterCall = res.actions.find(
-            (a) =>
-                a.type === "SmartContractExec" &&
-                Address.parse(a.SmartContractExec?.contract.address!).equals(
-                    coinAddress
-                )
-        );
+        const masterCall = res.actions.find((a) => a.type === "SmartContractExec" && Address.parse(a.SmartContractExec?.contract.address!).equals(coinAddress));
 
         if (!masterCall || masterCall.status !== "ok") {
             return "failed";
@@ -90,10 +87,10 @@ export class BclClient {
         return "done";
     };
 
-    fetchSellStatus = async (
-        coinAddress: Address,
-        txHash: string
-    ): Promise<TransactionStatus> => {
+    /**
+     * Returns sell operation status by tx hash or message hash
+     */
+    fetchSellStatus = async (coinAddress: Address, txHash: string): Promise<TransactionStatus> => {
         let res;
         try {
             res = await this.tonApi.events.getEvent(txHash);
@@ -105,13 +102,7 @@ export class BclClient {
             return "in_progress";
         }
 
-        const masterCall = res.actions.find(
-            (a) =>
-                a.type === "SmartContractExec" &&
-                Address.parse(a.SmartContractExec?.contract.address!).equals(
-                    coinAddress
-                )
-        );
+        const masterCall = res.actions.find((a) => a.type === "SmartContractExec" && Address.parse(a.SmartContractExec?.contract.address!).equals(coinAddress));
 
         if (!masterCall || masterCall.status !== "ok") {
             return "failed";
@@ -125,9 +116,10 @@ export class BclClient {
         return "done";
     };
 
-    fetchCoinDeployStatus = async (
-        txHash: string
-    ): Promise<TransactionStatus> => {
+    /**
+     * Returns coin deploy status by tx hash or message hash
+     */
+    fetchCoinDeployStatus = async (txHash: string): Promise<TransactionStatus> => {
         let res;
         try {
             res = await this.tonApi.events.getEvent(txHash);
@@ -139,13 +131,7 @@ export class BclClient {
             return "in_progress";
         }
 
-        const masterCall = res.actions.find(
-            (a) =>
-                a.type === "SmartContractExec" &&
-                Address.parse(a.SmartContractExec?.contract.address!).equals(
-                    Constants.MASTER_ADDRESS
-                )
-        );
+        const masterCall = res.actions.find((a) => a.type === "SmartContractExec" && Address.parse(a.SmartContractExec?.contract.address!).equals(Constants.MASTER_ADDRESS));
 
         if (!masterCall || masterCall.status !== "ok") {
             return "failed";
@@ -165,6 +151,9 @@ export class BclClient {
         return "done";
     };
 
+    /**
+     * Returns any contract TON balance
+     */
     fetchAccountBalance = async (address: Address) => {
         try {
             const res = await this.tonApi.accounts.getAccount(address.toRawString());
