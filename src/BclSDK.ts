@@ -42,8 +42,8 @@ type SdkOptionsSimple = {
 };
 
 export class BclSDK {
-    private apiProvider: AnyApiProvider;
-    private api: BclClient;
+    readonly apiProvider: AnyApiProvider;
+    readonly api: BclClient;
 
     private constructor(options: SdkOptions) {
         this.apiProvider = options.apiProvider;

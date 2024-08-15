@@ -18,7 +18,7 @@ export class BclClient {
         this.tonApi = options.tonApi;
     }
 
-    fetch = async (path: string) => {
+    private fetch = async (path: string) => {
         return await ofetch(this.endpoint + path);
     };
 
