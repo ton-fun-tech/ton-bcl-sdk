@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+//    "composite": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "allowJs": false,
+    "strict": true,
+    "declaration": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "noEmitOnError": true,
+//    "module": "esnext",
+//    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+//    "jsx": "preserve",
+    "incremental": true,
+    "types": ["node"],
+//    "baseUrl": ".",
+    "target": "ES2020",
+
+
+
+    "module": "commonjs",
+  },
+  "include": ["src"]
+}
