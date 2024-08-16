@@ -50,8 +50,8 @@ let sdk = BclSDK.createSimple({
 
 For test environment you can use this parameters: 
 
-BCL Master address - `EQACCsLnwJTRO4OhA4jx-94AyNRgqfMxQhHj0pPnqPY4K2wl`
-TonFun api address - `https://test.tonfun.tech/api/`
+- BCL Master address - `EQACCsLnwJTRO4OhA4jx-94AyNRgqfMxQhHj0pPnqPY4K2wl`
+- TonFun api address - `https://test.tonfun.tech/api/`
 
 Test coin parameters: 
 
