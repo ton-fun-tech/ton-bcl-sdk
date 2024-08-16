@@ -1,8 +1,8 @@
-[**ton-bcl-sdk**](/README.md) • **Docs**
+[**ton-bcl-sdk**](../README.md) • **Docs**
 
 ***
 
-[ton-bcl-sdk](/globals.md) / TransactionStatus
+[ton-bcl-sdk](../globals.md) / TransactionStatus
 
 # Type Alias: TransactionStatus
 
@@ -10,4 +10,4 @@
 
 ## Defined in
 
-[client/BclClient.ts:10](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/697168e6206aa7f76fe9d3d9c0b1a6a659d39868/src/client/BclClient.ts#L10)
+[client/BclClient.ts:10](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6a9e1b8bcd59d0f61ae7e9e2cf2e34a9873c67/src/client/BclClient.ts#L10)
