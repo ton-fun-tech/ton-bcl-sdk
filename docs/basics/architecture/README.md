@@ -4,7 +4,7 @@
 Setup contains of three contracts  
 - BCL Master
 - BCL Jetton master
-- BCL Jetto wallet
+- BCL Jetton wallet
  
 
 
