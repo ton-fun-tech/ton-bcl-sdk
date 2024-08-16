@@ -17,3 +17,4 @@
 * [OpenAPI](basics/openapi.md)
 * [Integrations](basics/integrations.md)
 * [Api reference](reference/README.md)
+  * [globals](reference/globals.md)
