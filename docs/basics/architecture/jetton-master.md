@@ -14,7 +14,7 @@ Main goal is to add ability to trade tokens on bonding curve without using DEX's
 
 Contract starts with `total_supply=0` and `trading_enabled=0`
 This means no tokens where sold yet and trading phase is active now.
-When trading phase is active users are free to buy/sell coins (but not transfer, see [[#Lock mechanics]]).
+When trading phase is active users are free to buy/sell coins (but not transfer, see [Lock mechanics](#lock-mechanics)).
 
 Once `bcl_supply` amount of coins are sold `trading_enabled` is set to false and trading phase is over. When this happens `liq_supply` amount of tokens are minted and sent to the DEX with collected TONs from trades.
 

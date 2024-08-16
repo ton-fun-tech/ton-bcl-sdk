@@ -1,11 +1,12 @@
 {
   "name": "ton-bcl-sdk",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "gen:doc": "yarn typedoc --options ./typedoc.json"
+    "gen:doc": "yarn typedoc --options ./typedoc.json",
+    "release": "yarn build && yarn publish"
   },
   "publishConfig": {
     "access": "public"
