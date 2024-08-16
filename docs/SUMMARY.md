@@ -1,46 +1,39 @@
 # Table of contents
 
 * [Welcome](README.md)
-
-## Getting Started
-
-* [Quickstart](getting-started/quickstart/README.md)
-  * [Page](getting-started/quickstart/page.md)
-* [Publish your docs](getting-started/publish-your-docs.md)
-
+ 
 ## Basics
 
-* [Editor](basics/editor.md)
-* [Markdown](basics/markdown.md)
-* [Images & media](basics/images-and-media.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [OpenAPI](basics/openapi.md)
-* [Integrations](basics/integrations.md)
+* [Glossary](basics/glossary.md)
+* [Architecture](basics/architecture/README.md)
+  * [BclMaster](basics/architecture/bcl-master.md)
+  * [JettonMaster](basics/architecture/jetton-master.md)
+  * [JettonWallet](basics/architecture/jetton-wallet.md)
 
 ## SDK Api reference
- 
+
 * [BclSDK](reference/BclSDK/README.md)
   * [classes](reference/BclSDK/classes/README.md)
     * [BclSDK](reference/BclSDK/classes/BclSDK.md)
   * [type-aliases](reference/BclSDK/type-aliases/README.md)
     * [AnyApiProvider](reference/BclSDK/type-aliases/AnyApiProvider.md)
-      * [DeployCoinInput](reference/BclSDK/type-aliases/DeployCoinInput.md)
+    * [DeployCoinInput](reference/BclSDK/type-aliases/DeployCoinInput.md)
 * [index](reference/index/README.md)
   * [type-aliases](reference/index/type-aliases/README.md)
     * [BclEvent](reference/index/type-aliases/BclEvent.md)
-      * [BclEventBuy](reference/index/type-aliases/BclEventBuy.md)
-      * [BclEventSell](reference/index/type-aliases/BclEventSell.md)
-      * [BclEventSendLiq](reference/index/type-aliases/BclEventSendLiq.md)
-      * [ClientOptions](reference/index/type-aliases/ClientOptions.md)
-      * [Coin](reference/index/type-aliases/Coin.md)
-      * [CoinMetadata](reference/index/type-aliases/CoinMetadata.md)
-      * [Event](reference/index/type-aliases/Event.md)
-      * [TransactionStatus](reference/index/type-aliases/TransactionStatus.md)
+    * [BclEventBuy](reference/index/type-aliases/BclEventBuy.md)
+    * [BclEventSell](reference/index/type-aliases/BclEventSell.md)
+    * [BclEventSendLiq](reference/index/type-aliases/BclEventSendLiq.md)
+    * [ClientOptions](reference/index/type-aliases/ClientOptions.md)
+    * [Coin](reference/index/type-aliases/Coin.md)
+    * [CoinMetadata](reference/index/type-aliases/CoinMetadata.md)
+    * [Event](reference/index/type-aliases/Event.md)
+    * [TransactionStatus](reference/index/type-aliases/TransactionStatus.md)
 * [provider](reference/provider/README.md)
   * [simpleTonapiProvider](reference/provider/simpleTonapiProvider/README.md)
     * [functions](reference/provider/simpleTonapiProvider/functions/README.md)
       * [createProvider](reference/provider/simpleTonapiProvider/functions/createProvider.md)
-        * [simpleTonapiProvider](reference/provider/simpleTonapiProvider/functions/simpleTonapiProvider.md)
+      * [simpleTonapiProvider](reference/provider/simpleTonapiProvider/functions/simpleTonapiProvider.md)
   * [tonConnectSender](reference/provider/tonConnectSender/README.md)
     * [functions](reference/provider/tonConnectSender/functions/README.md)
       * [tonConnectSender](reference/provider/tonConnectSender/functions/tonConnectSender.md)

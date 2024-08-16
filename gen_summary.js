@@ -79,7 +79,7 @@ function generateMarkdown(dir, basePath) {
             // result += generateMarkdown(fullPath, basePath);
         } else if (path.extname(fileOrDir) === '.md' && fileOrDir !== 'README.md') {
             const dirName = path.basename(path.dirname(fullPath));
-            result.add(`  * [${path.basename(fileOrDir, '.md')}](${relativePath})`)
+            result.add(`* [${path.basename(fileOrDir, '.md')}](${relativePath})`)
             // result += `  * [${path.basename(fileOrDir, '.md')}](${relativePath})\n`;
         }
     });
