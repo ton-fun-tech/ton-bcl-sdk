@@ -20,3 +20,5 @@
   * [hello](test/hello.md)
 * [Api reference](reference/README.md)
   * [globals](reference/globals.md)
+  * [classes](reference/classes)
+    * [BclSDK](reference/classes/BclSDK.md)

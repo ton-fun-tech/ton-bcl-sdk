@@ -6,5 +6,6 @@
   "out": "./docs/reference",
   "entryPoints": [
     "./src/index.ts"
-  ]
+  ],
+  "mode": "file"
 }
