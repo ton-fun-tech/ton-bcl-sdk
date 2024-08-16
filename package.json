@@ -1,6 +1,6 @@
 {
   "name": "ton-bcl-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -11,6 +11,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "dependencies": {
     "@ton/core": "^0.56.1",
     "@ton/crypto": "^3.2.0",
