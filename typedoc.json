@@ -1,0 +1,11 @@
+{
+  "plugin": ["typedoc-plugin-markdown"],
+  "interfacePropertiesFormat": "table",
+  "classPropertiesFormat": "table",
+  "typeDeclarationFormat": "table",
+  "out": "./docs/reference",
+  "entryPoints": [
+    "./src/index.ts"
+  ]
+
+}
