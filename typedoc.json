@@ -5,7 +5,10 @@
   "typeDeclarationFormat": "table",
   "out": "./docs/reference",
   "entryPoints": [
-    "./src/index.ts"
+    "./src/BclSDK.ts",
+    "./src/index.ts",
+    "./src/wrappers/**/*",
+    "./src/provider/**/*"
   ],
-  "mode": "file"
+  "readme": "none"
 }

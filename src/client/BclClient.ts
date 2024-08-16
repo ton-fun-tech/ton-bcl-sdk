@@ -2,8 +2,6 @@ import { ofetch } from "ofetch";
 import { Api } from "tonapi-sdk-js";
 import { Address } from "@ton/core";
 
-import { Constants } from "../constants";
-
 import { normalizeCoin, normalizeCoinEvent } from "./adapters";
 import { ClientOptions, Coin, Event } from "./types";
 
@@ -12,10 +10,12 @@ export type TransactionStatus = "done" | "failed" | "in_progress" | "not_found";
 export class BclClient {
     readonly endpoint: string;
     readonly tonApi: Api<any>;
+    readonly masterAddress: Address;
 
     constructor(options: ClientOptions) {
         this.endpoint = options.endpoint;
         this.tonApi = options.tonApi;
+        this.masterAddress = options.masterAddress
     }
 
     private fetch = async (path: string) => {
@@ -131,7 +131,7 @@ export class BclClient {
             return "in_progress";
         }
 
-        const masterCall = res.actions.find((a) => a.type === "SmartContractExec" && Address.parse(a.SmartContractExec?.contract.address!).equals(Constants.MASTER_ADDRESS));
+        const masterCall = res.actions.find((a) => a.type === "SmartContractExec" && Address.parse(a.SmartContractExec?.contract.address!).equals(this.masterAddress));
 
         if (!masterCall || masterCall.status !== "ok") {
             return "failed";

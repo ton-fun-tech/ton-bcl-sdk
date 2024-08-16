@@ -1,14 +1,11 @@
 import { Api } from "tonapi-sdk-js";
-import { Address, Cell, Contract, OpenedContract, Sender, toNano } from "@ton/core";
+import { Address, Cell, Contract, OpenedContract, Sender } from "@ton/core";
 
 import { BclClient } from "./client/BclClient";
 import { ClientOptions } from "./client/types";
 import { simpleTonapiProvider } from "./provider/simpleTonapiProvider";
-import { encodeOnChainContent } from "./utils/tokenMetadata";
 import { BclJetton } from "./wrappers/BclJetton";
 import { BclMaster } from "./wrappers/BclMaster";
-import { Constants } from "./constants";
-import { beginCell } from "@ton/ton";
 
 export type DeployCoinInput = {
     authorAddress: Address;
@@ -31,6 +28,10 @@ type SdkOptions = {
      */
     apiProvider: AnyApiProvider;
     clientOptions: ClientOptions;
+    /**
+     * Address of the BCL master contract
+     */
+    masterAddress: Address
 };
 
 type SdkOptionsSimple = {
@@ -38,16 +39,22 @@ type SdkOptionsSimple = {
      * Instance of TonApi
      */
     tonapiClient: Api<any>;
-    clientOptions: Omit<ClientOptions, "tonApi">;
+    clientOptions: Omit<ClientOptions, "tonApi" | "masterAddress">;
+    /**
+     * Address of the BCL master contract
+     */
+    masterAddress: Address
 };
 
 export class BclSDK {
     readonly apiProvider: AnyApiProvider;
     readonly api: BclClient;
+    readonly masterAddress: Address;
 
     private constructor(options: SdkOptions) {
         this.apiProvider = options.apiProvider;
         this.api = new BclClient(options.clientOptions);
+        this.masterAddress = options.masterAddress
     }
 
     /**
@@ -71,7 +78,7 @@ export class BclSDK {
      * Deploys new coin
      */
     async deployCoin(sender: Sender, config: DeployCoinInput) {
-        const master = this.apiProvider.open(BclMaster.createFromAddress(Constants.MASTER_ADDRESS));
+        const master = this.apiProvider.open(BclMaster.createFromAddress(this.masterAddress));
         await master.sendDeployCoin(sender, config);
     }
 
@@ -118,9 +125,11 @@ export class BclSDK {
         return new BclSDK({
             clientOptions: {
                 ...options.clientOptions,
-                tonApi: options.tonapiClient
+                tonApi: options.tonapiClient,
+                masterAddress: options.masterAddress
             },
-            apiProvider: simpleTonapiProvider(options.tonapiClient)
+            apiProvider: simpleTonapiProvider(options.tonapiClient),
+            masterAddress: options.masterAddress
         });
     }
 }

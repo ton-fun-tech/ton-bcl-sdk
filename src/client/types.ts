@@ -63,6 +63,10 @@ export type ClientOptions = {
      * Instance of TonApi client
      */
     tonApi: Api<any>;
+    /**
+     * Address of the BCL master contract
+     */
+    masterAddress: Address;
 };
 
 export type Event = {
