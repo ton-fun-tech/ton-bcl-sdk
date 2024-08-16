@@ -6,6 +6,13 @@
   "out": "./docs/reference",
   "entryPoints": [
     "./src/index.ts"
-  ]
+  ],
+  "publicPath": "/",
+  "githubPages": false,
+  "gitRemote": "origin",
+  "excludeExternals": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "cleanOutputDir": true
 
 }

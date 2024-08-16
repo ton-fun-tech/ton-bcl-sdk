@@ -1,4 +1,4 @@
-**ton-bcl-sdk** • [**Docs**](globals.md)
+**ton-bcl-sdk** • [**Docs**](/globals.md)
 
 ***
 
