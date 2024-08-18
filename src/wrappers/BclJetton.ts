@@ -167,6 +167,7 @@ export class BclJetton implements Contract {
      */
     async getBclData(provider: ContractProvider): Promise<BclData> {
         const res = (await provider.get("get_bcl_data", [])).stack;
+
         return {
             totalSupply: res.readBigNumber(),
             bclSupply: res.readBigNumber(),
