@@ -45,7 +45,7 @@ export class BclWallet implements Contract {
     async sendSellCoins(
         provider: ContractProvider,
         via: Sender,
-        opts: { amount: bigint; minReceive: bigint; refId: string },
+        opts: { amount: bigint; minReceive: bigint; referral: Cell | null },
     ) {
         await provider.internal(via, {
             value: Constants.SELL_OPERATION_NETWORK_FEE,
@@ -56,7 +56,7 @@ export class BclWallet implements Contract {
                 .storeUint(0, 64)
                 .storeCoins(opts.amount)
                 .storeCoins(opts.minReceive)
-                .storeUint(crc32str(opts.refId), 32)
+                .storeMaybeRef(opts.referral)
                 .endCell(),
         });
     }
