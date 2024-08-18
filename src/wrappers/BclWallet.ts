@@ -46,6 +46,7 @@ export class BclWallet implements Contract {
         provider: ContractProvider,
         via: Sender,
         opts: { amount: bigint; minReceive: bigint; refId: string },
+        queryId?: bigint
     ) {
         await provider.internal(via, {
             value: Constants.SELL_OPERATION_NETWORK_FEE,
@@ -53,7 +54,7 @@ export class BclWallet implements Contract {
             bounce: true,
             body: beginCell()
                 .storeUint(crc32str("op::sell"), 32)
-                .storeUint(0, 64)
+                .storeUint(queryId ?? 0n, 64)
                 .storeCoins(opts.amount)
                 .storeCoins(opts.minReceive)
                 .storeUint(crc32str(opts.refId), 32)

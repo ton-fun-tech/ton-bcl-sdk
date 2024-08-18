@@ -145,7 +145,8 @@ export class BclJetton implements Contract {
     async sendBuy(
         provider: ContractProvider,
         via: Sender,
-        opts: { tons: bigint; minReceive: bigint, referral: Cell | null }
+        opts: { tons: bigint; minReceive: bigint, referral: Cell | null },
+        queryId?: bigint
     ) {
         await provider.internal(via, {
             value: opts.tons + Constants.BUY_OPERATION_NETWORK_FEE,
@@ -153,7 +154,7 @@ export class BclJetton implements Contract {
             bounce: true,
             body: beginCell()
                 .storeUint(crc32str("op::buy"), 32)
-                .storeUint(0, 64)
+                .storeUint(queryId ?? 0n, 64)
                 .storeCoins(opts.minReceive)
                 .storeMaybeRef(opts.referral)
                 .endCell()

@@ -77,9 +77,9 @@ export class BclSDK {
     /**
      * Deploys new coin
      */
-    async deployCoin(sender: Sender, config: DeployCoinInput) {
+    async deployCoin(sender: Sender, config: DeployCoinInput, queryId?: bigint) {
         const master = this.apiProvider.open(BclMaster.createFromAddress(this.masterAddress));
-        await master.sendDeployCoin(sender, config);
+        await master.sendDeployCoin(sender, config, queryId);
     }
 
     /**
