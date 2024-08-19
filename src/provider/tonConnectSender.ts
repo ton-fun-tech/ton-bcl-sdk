@@ -6,7 +6,12 @@ import {
     SenderArguments,
     storeStateInit
 } from "@ton/core";
-import { TonConnectUI } from "@tonconnect/ui";
+import type { 
+    Account as TonConnectAccount,
+    SendTransactionRequest,
+    ActionConfiguration,
+    SendTransactionResponse
+} from "@tonconnect/ui";
 
 import { unixtime } from "../utils/time";
 
@@ -16,9 +21,14 @@ type SendResponse = {
     hash: string;
 };
 
+export type TonConnectLikeObject = {
+    get account(): TonConnectAccount | null;
+    sendTransaction(tx: SendTransactionRequest, options?: ActionConfiguration): Promise<SendTransactionResponse>;
+}   
+
 // Should be created for each call
 export function tonConnectSender(
-    tonConnect: TonConnectUI
+    tonConnect: TonConnectLikeObject
 ): Sender & { getResult(): Promise<SendResponse> } {
     let response: SendResponse;
     const responseWaiters: ((response: SendResponse) => void)[] = [];

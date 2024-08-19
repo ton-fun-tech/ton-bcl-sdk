@@ -30,7 +30,6 @@
     "typescript": "^5.5.4"
   },
   "peerDependencies": {
-    "@tonconnect/ui": ">= 2.0.10-beta.0",
     "tonapi-sdk-js": "^1.0.15"
   },
   "keywords": [],

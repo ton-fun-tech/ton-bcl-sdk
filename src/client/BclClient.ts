@@ -18,7 +18,7 @@ export class BclClient {
         this.masterAddress = options.masterAddress
     }
 
-    private fetch = async (path: string) => {
+    protected fetch = async (path: string) => {
         return await ofetch(this.endpoint + path);
     };
 
