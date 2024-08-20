@@ -6,6 +6,7 @@ import { ClientOptions } from "./client/types";
 import { simpleTonapiProvider } from "./provider/simpleTonapiProvider";
 import { BclJetton } from "./wrappers/BclJetton";
 import { BclMaster } from "./wrappers/BclMaster";
+import { HttpProviderBase } from "./provider/httpProviderBase";
 
 export type DeployCoinInput = {
     authorAddress: Address;

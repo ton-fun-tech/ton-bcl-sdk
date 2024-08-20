@@ -1,9 +1,10 @@
-import { ofetch } from "ofetch";
 import { Api } from "tonapi-sdk-js";
 import { Address } from "@ton/core";
 
-import { normalizeCoin, normalizeCoinEvent } from "./adapters";
+import { AnyObject, normalizeCoin, normalizeCoinEvent } from "./adapters";
 import { ClientOptions, Coin, Event } from "./types";
+import { HttpProviderBase } from "../provider/httpProviderBase";
+import { OfetchHttpProvider } from "./ofetchHttpProvider";
 
 export type TransactionStatus = "done" | "failed" | "in_progress" | "not_found";
 
@@ -11,22 +12,20 @@ export class BclClient {
     readonly endpoint: string;
     readonly tonApi: Api<any>;
     readonly masterAddress: Address;
+    readonly httpProvider: HttpProviderBase;
 
     constructor(options: ClientOptions) {
         this.endpoint = options.endpoint;
         this.tonApi = options.tonApi;
         this.masterAddress = options.masterAddress
+        this.httpProvider = options.httpProvider ?? new OfetchHttpProvider();
     }
-
-    private fetch = async (path: string) => {
-        return await ofetch(this.endpoint + path);
-    };
 
     /**
      * Returns list of all coins
      */
     fetchCoins = async (): Promise<Coin[]> => {
-        const res = await this.fetch("/v1/getCoins");
+        const res = await this.httpProvider.get<AnyObject>(this.endpoint + "/v1/getCoins");
         return res.map(normalizeCoin);
     };
 
@@ -35,8 +34,8 @@ export class BclClient {
      * @param address
      */
     fetchCoin = async (address: Address): Promise<Coin> => {
-        const res = await this.fetch(
-            "/v1/getCoin/" + address.toString({ urlSafe: true })
+        const res = await this.httpProvider.get<AnyObject>(
+            this.endpoint + "/v1/getCoin/" + address.toString({ urlSafe: true })
         );
         return normalizeCoin(res);
     };
@@ -46,8 +45,8 @@ export class BclClient {
      * @param address
      */
     fetchCoinEvents = async (address: Address): Promise<Event[]> => {
-        const res = await this.fetch(
-            "/v1/getCoinEvents/" + address.toString({ urlSafe: true })
+        const res = await this.httpProvider.get<AnyObject>(
+            this.endpoint + "/v1/getCoinEvents/" + address.toString({ urlSafe: true })
         );
         return res.map((e: any) => {
             return {

@@ -2,7 +2,7 @@ import { Address } from "@ton/core";
 
 import { BclEvent, Coin } from "./types";
 
-type AnyObject = Record<string, any>;
+export type AnyObject = Record<string, any>;
 
 export function normalizeCoin(coin: AnyObject): Coin {
     return {

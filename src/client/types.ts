@@ -1,5 +1,6 @@
 import { Api } from "tonapi-sdk-js";
 import { Address } from "@ton/core";
+import { HttpProviderBase } from "../provider/httpProviderBase";
 
 export type CoinMetadata = {
     name: string; // Name of the coin
@@ -67,6 +68,10 @@ export type ClientOptions = {
      * Address of the BCL master contract
      */
     masterAddress: Address;
+    /**
+     * Http client Provider
+     */
+    httpProvider?: HttpProviderBase;
 };
 
 export type Event = {
