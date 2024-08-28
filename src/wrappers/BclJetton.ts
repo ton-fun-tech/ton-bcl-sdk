@@ -58,6 +58,79 @@ export type BclData = {
     referral: Cell
 }
 
+
+export type ContractEvent =
+    | EventSendLiq
+    | EventBuy
+    | EventSell
+
+export type EventSendLiq = {
+    type: 'send_liq'
+    tonLiq: bigint
+    jettonLiq: bigint
+}
+
+export type EventBuy = {
+    type: 'buy'
+    trader: Address
+    tonValue: bigint
+    supplyDelta: bigint
+    newSupply: bigint
+    tonLiqCollected: bigint
+    referral: Cell|null
+}
+
+export type EventSell = {
+    type: 'sell'
+    trader: Address
+    tonValue: bigint
+    supplyDelta: bigint
+    newSupply: bigint
+    tonLiqCollected: bigint
+    referral: Cell|null
+}
+
+/**
+ * Parses on-chain events from BCL contract
+ * Events are external messages generated on sell/buy/send liq operations
+ * @param cell
+ */
+export function parseBclEvent(cell: Cell): ContractEvent {
+    let cs = cell.beginParse()
+    let eventId = cs.loadUint(32)
+
+    if (eventId === crc32str('send_liq_log')) {
+        return {
+            type: 'send_liq',
+            tonLiq: cs.loadCoins(),
+            jettonLiq: cs.loadCoins(),
+        }
+    } else if (eventId === crc32str('sell_log')) {
+        return {
+            type: 'sell',
+            trader: cs.loadAddress(),
+            tonValue: cs.loadCoins(),
+            supplyDelta: cs.loadCoins(),
+            newSupply: cs.loadCoins(),
+            tonLiqCollected: cs.loadCoins(),
+            referral: cs.loadMaybeRef()
+        }
+    } else if (eventId === crc32str('buy_log')) {
+        return {
+            type: 'buy',
+            trader: cs.loadAddress(),
+            tonValue: cs.loadCoins(),
+            supplyDelta: cs.loadCoins(),
+            newSupply: cs.loadCoins(),
+            tonLiqCollected: cs.loadCoins(),
+            referral: cs.loadMaybeRef()
+        }
+    }
+
+    throw new Error('Unknown BCL event with id: ' + eventId.toString(16))
+}
+
+
 /**
  * Wrapper for BCL contract
  */
