@@ -19,6 +19,7 @@ export type DeployCoinInput = {
     imageUrl?: string;
     symbol?: string;
     referral: Cell | null
+    queryId?: bigint
 };
 
 /**
@@ -56,7 +57,7 @@ export class BclMaster implements Contract {
             bounce: true,
             body: beginCell()
                 .storeUint(crc32str("op::deploy_coin"), 32)
-                .storeUint(0, 64)
+                .storeUint(input.queryId ?? 0, 64)
                 .storeRef(content)
                 .storeAddress(input.authorAddress)
                 .storeRef(input.referral ?? beginCell().endCell())
