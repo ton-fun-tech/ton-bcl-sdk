@@ -8,6 +8,10 @@
 
 ## Index
 
+### Type Aliases
+
+- [TonConnectLikeObject](type-aliases/TonConnectLikeObject.md)
+
 ### Functions
 
 - [tonConnectSender](functions/tonConnectSender.md)

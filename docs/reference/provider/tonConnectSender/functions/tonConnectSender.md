@@ -10,7 +10,7 @@
 
 ## Parameters
 
-• **tonConnect**: `TonConnectUI`
+• **tonConnect**: [`TonConnectLikeObject`](../type-aliases/TonConnectLikeObject.md)
 
 ## Returns
 
@@ -18,4 +18,4 @@
 
 ## Defined in
 
-[provider/tonConnectSender.ts:20](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/provider/tonConnectSender.ts#L20)
+[provider/tonConnectSender.ts:30](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/provider/tonConnectSender.ts#L30)

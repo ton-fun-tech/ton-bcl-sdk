@@ -15,4 +15,3 @@
 ### Type Aliases
 
 - [AnyApiProvider](type-aliases/AnyApiProvider.md)
-- [DeployCoinInput](type-aliases/DeployCoinInput.md)

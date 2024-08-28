@@ -10,4 +10,4 @@
 
 ## Defined in
 
-[client/BclClient.ts:8](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/client/BclClient.ts#L8)
+[client/BclClient.ts:9](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/client/BclClient.ts#L9)

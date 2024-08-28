@@ -12,8 +12,8 @@
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `open` | `OpenedContract`\<`T`\> | [BclSDK.ts:20](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/BclSDK.ts#L20) |
+| `open` | `OpenedContract`\<`T`\> | [BclSDK.ts:12](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/BclSDK.ts#L12) |
 
 ## Defined in
 
-[BclSDK.ts:19](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/BclSDK.ts#L19)
+[BclSDK.ts:11](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/BclSDK.ts#L11)

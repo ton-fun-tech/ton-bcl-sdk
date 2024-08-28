@@ -20,11 +20,11 @@ export class BclClient {
         this.masterAddress = options.masterAddress
         this.httpProvider = options.httpProvider ?? new OfetchHttpProvider();
     }
-  
-    protected fetch = async (path: string) => {
-        return await ofetch(this.endpoint + path);
-    };
-  
+
+    // protected fetch = async (path: string) => {
+    //     return await ofetch(this.endpoint + path);
+    // };
+
     /**
      * Returns list of all coins
      */

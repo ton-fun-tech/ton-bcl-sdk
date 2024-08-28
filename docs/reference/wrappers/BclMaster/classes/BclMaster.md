@@ -16,7 +16,7 @@ Wrapper for Master BCL contract
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `address` | `readonly` | `Address` | [wrappers/BclMaster.ts:29](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/wrappers/BclMaster.ts#L29) |
+| `address` | `readonly` | `Address` | [wrappers/BclMaster.ts:30](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/wrappers/BclMaster.ts#L30) |
 
 ## Methods
 
@@ -40,7 +40,7 @@ Deploys coin
 
 #### Defined in
 
-[wrappers/BclMaster.ts:40](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/wrappers/BclMaster.ts#L40)
+[wrappers/BclMaster.ts:41](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/wrappers/BclMaster.ts#L41)
 
 ***
 
@@ -58,4 +58,4 @@ Deploys coin
 
 #### Defined in
 
-[wrappers/BclMaster.ts:33](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/wrappers/BclMaster.ts#L33)
+[wrappers/BclMaster.ts:34](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/wrappers/BclMaster.ts#L34)

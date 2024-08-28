@@ -12,10 +12,10 @@
 
 | Name | Type | Description | Defined in |
 | ------ | ------ | ------ | ------ |
-| `date` | `number` | Unixtime of event | [client/types.ts:76](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/client/types.ts#L76) |
-| `event` | [`BclEvent`](BclEvent.md) | BCL Event | [client/types.ts:84](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/client/types.ts#L84) |
-| `txHash` | `string` | Hash of TX of event | [client/types.ts:80](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/client/types.ts#L80) |
+| `date` | `number` | Unixtime of event | [client/types.ts:81](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/client/types.ts#L81) |
+| `event` | [`BclEvent`](BclEvent.md) | BCL Event | [client/types.ts:89](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/client/types.ts#L89) |
+| `txHash` | `string` | Hash of TX of event | [client/types.ts:85](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/client/types.ts#L85) |
 
 ## Defined in
 
-[client/types.ts:72](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/client/types.ts#L72)
+[client/types.ts:77](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/client/types.ts#L77)

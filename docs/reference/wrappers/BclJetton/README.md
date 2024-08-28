@@ -15,3 +15,11 @@
 ### Type Aliases
 
 - [BclData](type-aliases/BclData.md)
+- [ContractEvent](type-aliases/ContractEvent.md)
+- [EventBuy](type-aliases/EventBuy.md)
+- [EventSell](type-aliases/EventSell.md)
+- [EventSendLiq](type-aliases/EventSendLiq.md)
+
+### Functions
+
+- [parseBclEvent](functions/parseBclEvent.md)

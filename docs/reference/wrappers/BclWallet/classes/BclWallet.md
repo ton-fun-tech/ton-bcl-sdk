@@ -16,7 +16,7 @@ Wrapper for user bcl wallet contract
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `address` | `readonly` | `Address` | [wrappers/BclWallet.ts:19](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/wrappers/BclWallet.ts#L19) |
+| `address` | `readonly` | `Address` | [wrappers/BclWallet.ts:18](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/wrappers/BclWallet.ts#L18) |
 
 ## Methods
 
@@ -36,12 +36,12 @@ Returns standard jetton wallet data
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `balance` | `bigint` | [wrappers/BclWallet.ts:34](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/wrappers/BclWallet.ts#L34) |
-| `owner` | `Address` | [wrappers/BclWallet.ts:35](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/wrappers/BclWallet.ts#L35) |
+| `balance` | `bigint` | [wrappers/BclWallet.ts:33](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/wrappers/BclWallet.ts#L33) |
+| `owner` | `Address` | [wrappers/BclWallet.ts:34](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/wrappers/BclWallet.ts#L34) |
 
 #### Defined in
 
-[wrappers/BclWallet.ts:30](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/wrappers/BclWallet.ts#L30)
+[wrappers/BclWallet.ts:29](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/wrappers/BclWallet.ts#L29)
 
 ***
 
@@ -61,7 +61,7 @@ Returns wallet lock status
 
 #### Defined in
 
-[wrappers/BclWallet.ts:82](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/wrappers/BclWallet.ts#L82)
+[wrappers/BclWallet.ts:81](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/wrappers/BclWallet.ts#L81)
 
 ***
 
@@ -86,7 +86,9 @@ opts.minReceive - min amount of TONs expected to receive
 
 • **opts.minReceive**: `bigint`
 
-• **opts.refId**: `string`
+• **opts.queryId**: `bigint`
+
+• **opts.referral**: `null` \| `Cell`
 
 #### Returns
 
@@ -94,13 +96,13 @@ opts.minReceive - min amount of TONs expected to receive
 
 #### Defined in
 
-[wrappers/BclWallet.ts:45](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/wrappers/BclWallet.ts#L45)
+[wrappers/BclWallet.ts:44](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/wrappers/BclWallet.ts#L44)
 
 ***
 
 ### sendUnlockWallet()
 
-> **sendUnlockWallet**(`provider`, `via`): `Promise`\<`void`\>
+> **sendUnlockWallet**(`provider`, `via`, `opts`): `Promise`\<`void`\>
 
 Attempt to unlock wallet transfers
 
@@ -110,13 +112,17 @@ Attempt to unlock wallet transfers
 
 • **via**: `Sender`
 
+• **opts**
+
+• **opts.queryId?**: `bigint`
+
 #### Returns
 
 `Promise`\<`void`\>
 
 #### Defined in
 
-[wrappers/BclWallet.ts:67](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/wrappers/BclWallet.ts#L67)
+[wrappers/BclWallet.ts:66](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/wrappers/BclWallet.ts#L66)
 
 ***
 
@@ -134,4 +140,4 @@ Attempt to unlock wallet transfers
 
 #### Defined in
 
-[wrappers/BclWallet.ts:23](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/4dc8576c8b5afcf36dbccde36654b6e5b45787e5/src/wrappers/BclWallet.ts#L23)
+[wrappers/BclWallet.ts:22](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ffd6d588d9dc3d518bbd0964504b3e82bf668687/src/wrappers/BclWallet.ts#L22)
