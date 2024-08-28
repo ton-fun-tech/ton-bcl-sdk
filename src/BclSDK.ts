@@ -5,16 +5,7 @@ import { BclClient } from "./client/BclClient";
 import { ClientOptions } from "./client/types";
 import { simpleTonapiProvider } from "./provider/simpleTonapiProvider";
 import { BclJetton } from "./wrappers/BclJetton";
-import { BclMaster } from "./wrappers/BclMaster";
-
-export type DeployCoinInput = {
-    authorAddress: Address;
-    name: string;
-    description?: string;
-    imageUrl?: string;
-    symbol?: string;
-    referral: Cell | null
-};
+import {BclMaster, DeployCoinInput} from "./wrappers/BclMaster";
 
 export type AnyApiProvider = {
     open<T extends Contract>(contract: T): OpenedContract<T>;

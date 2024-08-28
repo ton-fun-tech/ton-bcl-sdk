@@ -1,7 +1,6 @@
 import {
     Address,
-    beginCell,
-    Cell,
+    beginCell, Cell,
     Contract,
     ContractProvider,
     Sender,
@@ -45,7 +44,7 @@ export class BclWallet implements Contract {
     async sendSellCoins(
         provider: ContractProvider,
         via: Sender,
-        opts: { amount: bigint; minReceive: bigint; refId: string },
+        opts: { amount: bigint; minReceive: bigint; referral: Cell|null, queryId: bigint },
     ) {
         await provider.internal(via, {
             value: Constants.SELL_OPERATION_NETWORK_FEE,
@@ -53,10 +52,10 @@ export class BclWallet implements Contract {
             bounce: true,
             body: beginCell()
                 .storeUint(crc32str("op::sell"), 32)
-                .storeUint(0, 64)
+                .storeUint(opts.queryId ?? 0, 64)
                 .storeCoins(opts.amount)
                 .storeCoins(opts.minReceive)
-                .storeUint(crc32str(opts.refId), 32)
+                .storeMaybeRef(opts.referral)
                 .endCell(),
         });
     }
@@ -64,14 +63,14 @@ export class BclWallet implements Contract {
     /**
      * Attempt to unlock wallet transfers
      */
-    async sendUnlockWallet(provider: ContractProvider, via: Sender) {
+    async sendUnlockWallet(provider: ContractProvider, via: Sender, opts: { queryId?: bigint }) {
         await provider.internal(via, {
             value: Constants.WALLET_UNLOCK_OPERATION_NETWORK_FEE,
             sendMode: SendMode.PAY_GAS_SEPARATELY,
             bounce: true,
             body: beginCell()
                 .storeUint(crc32str('op::unlock_wallet'), 32)
-                .storeUint(0, 64)
+                .storeUint(opts.queryId ?? 0, 64)
                 .endCell()
         })
     }
