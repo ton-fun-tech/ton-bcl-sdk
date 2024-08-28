@@ -5,7 +5,8 @@ import { BclClient } from "./client/BclClient";
 import { ClientOptions } from "./client/types";
 import { simpleTonapiProvider } from "./provider/simpleTonapiProvider";
 import { BclJetton } from "./wrappers/BclJetton";
-import {BclMaster, DeployCoinInput} from "./wrappers/BclMaster";
+import { BclMaster, DeployCoinInput } from "./wrappers/BclMaster";
+import { HttpProviderBase } from "./provider/httpProviderBase";
 
 export type AnyApiProvider = {
     open<T extends Contract>(contract: T): OpenedContract<T>;
