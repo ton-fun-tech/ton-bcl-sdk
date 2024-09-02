@@ -8,3 +8,5 @@ export * from "./client/types";
 export * from "./wrappers/BclMaster"
 export * from "./wrappers/BclJetton"
 export * from "./wrappers/BclWallet"
+
+export * from "./constants"
