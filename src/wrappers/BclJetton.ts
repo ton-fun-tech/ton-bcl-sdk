@@ -179,6 +179,9 @@ export class BclJetton implements Contract {
 
     /**
      * Returns how many coins one can get for given amount of TONs
+     *
+     * fees - amount of platform fees in TONs
+     * coins - amount of coins buyer would receive
      */
     async getCoinsForTons(
         provider: ContractProvider,
@@ -195,6 +198,9 @@ export class BclJetton implements Contract {
 
     /**
      * Returns how many TONs one can get for given amount of coins
+     *
+     * fees - amount of platform fees in TONs
+     * tons - amount of TONs user seller would receive
      */
     async getTonsForCoins(
         provider: ContractProvider,
