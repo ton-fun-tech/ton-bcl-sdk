@@ -18,12 +18,19 @@
 - [Coin](type-aliases/Coin.md)
 - [CoinMetadata](type-aliases/CoinMetadata.md)
 - [Event](type-aliases/Event.md)
+- [ReferralConfig](type-aliases/ReferralConfig.md)
 - [TransactionStatus](type-aliases/TransactionStatus.md)
+
+### Variables
+
+- [Constants](variables/Constants.md)
 
 ### Functions
 
 - [crc32](functions/crc32.md)
 - [crc32str](functions/crc32str.md)
+- [packReferralConfig](functions/packReferralConfig.md)
+- [unpackReferralConfig](functions/unpackReferralConfig.md)
 
 ## References
 
