@@ -1,6 +1,6 @@
-import { Api } from "tonapi-sdk-js";
-import { Address } from "@ton/core";
-import { HttpProviderBase } from "../provider/httpProviderBase";
+import {Api} from "tonapi-sdk-js";
+import {Address} from "@ton/core";
+import {HttpProviderBase} from "../provider/httpProviderBase";
 
 export type CoinMetadata = {
     name: string; // Name of the coin
@@ -10,6 +10,10 @@ export type CoinMetadata = {
 };
 
 export type Coin = {
+    /**
+     * Internal id of coin in ton.fun system, used for pagination
+     */
+    id: string;
     /**
      * Address of the coin
      */
@@ -45,29 +49,34 @@ export type Coin = {
      */
     tradingEnabled: boolean;
     /**
-     * Timestamp of coin creation
+     * Referral cell
      */
-    createdAt: number;
+    referral: string
     /**
      * Amount of TONs collected for STON.fi liquidity
      */
     tonLiqCollected: bigint;
-    referral: string
+    /**
+     * Timestamp of coin creation
+     */
+    createdAt: number;
 };
+
+export type GetCoinsResponse = {
+    items: Coin[]
+    cursor: string | null
+}
+
+export type GetEventsResponse = {
+    items: Event[]
+    cursor: string | null
+}
 
 export type ClientOptions = {
     /**
      * Link to BCL API endpoint
      */
     endpoint: string;
-    /**
-     * Instance of TonApi client
-     */
-    tonApi: Api<any>;
-    /**
-     * Address of the BCL master contract
-     */
-    masterAddress: Address;
     /**
      * Http client Provider
      */
@@ -76,20 +85,40 @@ export type ClientOptions = {
 
 export type Event = {
     /**
-     * Unixtime of event
+     * Id of the event, used for pagination
      */
-    date: number;
+    id: string
     /**
-     * Hash of TX of event
+     * Lt of the transaction in which event occurred
+     */
+    lt: number
+    /**
+     * Unixtime of transaction
+     */
+    txUtime: number
+    /**
+     * Hash of transaction of event
      */
     txHash: string;
     /**
-     * BCL Event
+     * Query id of message that initiated transaction
+     */
+    queryId: string
+    /**
+     * Event itself
      */
     event: BclEvent;
+    /**
+     * Address of coin to which event corresponds
+     */
+    coinAddress: Address;
 };
 
-export type BclEvent = BclEventSendLiq | BclEventBuy | BclEventSell;
+export type BclEvent =
+    | BclEventSendLiq
+    | BclEventBuy
+    | BclEventSell
+    | BclEventDeployment
 
 /**
  * This event means trading phase is over,
@@ -164,3 +193,53 @@ export type BclEventSell = {
     tonLiqCollected: bigint;
     referral: string;
 };
+
+/**
+ * This event occurs when new coin is deployed
+ * It contains coin information at the moment of deployment
+ */
+export type BclEventDeployment = {
+    type: 'deployment',
+    /**
+     * Metadata of the coin
+     */
+    metadata: CoinMetadata;
+    /**
+     * Current supply of the coin
+     */
+    totalSupply: bigint;
+    /**
+     * BCL supply of the coin
+     * This is the max amount of coins that are going to be sold on curve
+     */
+    bclSupply: bigint;
+    /**
+     * Amount of tokens be minted for liquidity on STON.fi
+     */
+    liqSupply: bigint;
+    /**
+     * Last trade unixtime
+     */
+    lastTradeDate: number;
+    /**
+     * Address of the author
+     */
+    authorAddress: Address;
+    /**
+     * Is trading phase active
+     * false means coin is listed on STON.fi you cant sell/buy coins via BCL contract
+     */
+    tradingEnabled: boolean;
+    /**
+     * Referral cell
+     */
+    referral: string
+    /**
+     * Amount of TONs collected for STON.fi liquidity
+     */
+    tonLiqCollected: bigint;
+    /**
+     * Timestamp of coin creation
+     */
+    createdAt: number;
+}

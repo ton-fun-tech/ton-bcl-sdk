@@ -6,8 +6,8 @@
 
 # Type Alias: BclEvent
 
-> **BclEvent**: [`BclEventSendLiq`](BclEventSendLiq.md) \| [`BclEventBuy`](BclEventBuy.md) \| [`BclEventSell`](BclEventSell.md)
+> **BclEvent**: [`BclEventSendLiq`](BclEventSendLiq.md) \| [`BclEventBuy`](BclEventBuy.md) \| [`BclEventSell`](BclEventSell.md) \| [`BclEventDeployment`](BclEventDeployment.md)
 
 ## Defined in
 
-[client/types.ts:92](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7c79deee0843005cc270344ad3ec486e60aeccd9/src/client/types.ts#L92)
+[client/types.ts:117](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/409085fd00df7301399c36c4c1a47414008814a9/src/client/types.ts#L117)

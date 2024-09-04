@@ -1,3 +1,9 @@
+### 0.1.4
+- all api endpoints are paginated now
+- added method to fetch all server events, useful for syncing your server with ton.fun api
+- removed tonapi from client
+- updated docs
+
 ### 0.1.3
 - exported gas constants
 - improvements in docs

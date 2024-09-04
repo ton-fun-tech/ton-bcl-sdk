@@ -10,7 +10,7 @@
 
 ### get()
 
-> **get**\<`T`\>(`url`): `Promise`\<`T`\>
+> **get**\<`T`\>(`url`, `opts`?): `Promise`\<`T`\>
 
 #### Type Parameters
 
@@ -20,13 +20,17 @@
 
 • **url**: `string`
 
+• **opts?**
+
+• **opts.query?**
+
 #### Returns
 
 `Promise`\<`T`\>
 
 #### Defined in
 
-[provider/httpProviderBase.ts:2](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7c79deee0843005cc270344ad3ec486e60aeccd9/src/provider/httpProviderBase.ts#L2)
+[provider/httpProviderBase.ts:2](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/409085fd00df7301399c36c4c1a47414008814a9/src/provider/httpProviderBase.ts#L2)
 
 ***
 
@@ -50,4 +54,4 @@
 
 #### Defined in
 
-[provider/httpProviderBase.ts:3](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7c79deee0843005cc270344ad3ec486e60aeccd9/src/provider/httpProviderBase.ts#L3)
+[provider/httpProviderBase.ts:3](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/409085fd00df7301399c36c4c1a47414008814a9/src/provider/httpProviderBase.ts#L3)

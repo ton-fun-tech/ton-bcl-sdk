@@ -22,14 +22,14 @@ It also relies on [TonApi](https://tonapi.io/) for transaction status fetching a
 You can create instance of SDK this way: 
 
 ```typescript
-import { Api, HttpClient } from "tonapi-sdk-js";
-import { BclSDK } from "ton-bcl-sdk";
-import { Address } from "@ton/core";
+import {Api, HttpClient} from "tonapi-sdk-js";
+import {Address} from "@ton/core";
+import { BclSDK, simpleTonapiProvider } from "ton-bcl-sdk";
 
 const TONAPI_TOKEN = 'YOUR_TONAPI_TOKEN'
 
-let sdk = BclSDK.createSimple({
-    tonapiClient: new Api(
+let sdk = BclSDK.create({
+    apiProvider: simpleTonapiProvider(new Api(
         new HttpClient({
             baseUrl: 'https://tonapi.io',
             baseApiParams: {
@@ -39,11 +39,11 @@ let sdk = BclSDK.createSimple({
                 },
             },
         })
-    ),
+    )),
     clientOptions: {
-        endpoint: 'https://test.tonfun.tech/api/',
+        endpoint: 'https://test.tonfun.tech/api/v1',
     },
-    masterAddress: Address.parse('EQACCsLnwJTRO4OhA4jx-94AyNRgqfMxQhHj0pPnqPY4K2wl')
+    masterAddress: Address.parse('UQCEBX20fDRsi4nN953ZhvgRlTvmRD9YDWhZF4Sptly-BIOg')
 });
 ```
 
@@ -51,8 +51,8 @@ let sdk = BclSDK.createSimple({
 
 For test environment you can use this parameters: 
 
-- BCL Master address - `EQACCsLnwJTRO4OhA4jx-94AyNRgqfMxQhHj0pPnqPY4K2wl`
-- TonFun api address - `https://test.tonfun.tech/api/`
+- BCL Master address - `UQCEBX20fDRsi4nN953ZhvgRlTvmRD9YDWhZF4Sptly-BIOg`
+- TonFun api address - `https://test.tonfun.tech/api/v1`
 
 Test coin parameters: 
 

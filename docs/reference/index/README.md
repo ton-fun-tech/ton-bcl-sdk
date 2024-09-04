@@ -12,12 +12,15 @@
 
 - [BclEvent](type-aliases/BclEvent.md)
 - [BclEventBuy](type-aliases/BclEventBuy.md)
+- [BclEventDeployment](type-aliases/BclEventDeployment.md)
 - [BclEventSell](type-aliases/BclEventSell.md)
 - [BclEventSendLiq](type-aliases/BclEventSendLiq.md)
 - [ClientOptions](type-aliases/ClientOptions.md)
 - [Coin](type-aliases/Coin.md)
 - [CoinMetadata](type-aliases/CoinMetadata.md)
 - [Event](type-aliases/Event.md)
+- [GetCoinsResponse](type-aliases/GetCoinsResponse.md)
+- [GetEventsResponse](type-aliases/GetEventsResponse.md)
 - [ReferralConfig](type-aliases/ReferralConfig.md)
 - [TransactionStatus](type-aliases/TransactionStatus.md)
 
@@ -106,9 +109,21 @@ Re-exports [HttpProviderBase](../provider/httpProviderBase/interfaces/HttpProvid
 
 ***
 
+### createProvider
+
+Re-exports [createProvider](../provider/simpleTonapiProvider/functions/createProvider.md)
+
+***
+
 ### parseBclEvent
 
 Re-exports [parseBclEvent](../wrappers/BclJetton/functions/parseBclEvent.md)
+
+***
+
+### simpleTonapiProvider
+
+Re-exports [simpleTonapiProvider](../provider/simpleTonapiProvider/functions/simpleTonapiProvider.md)
 
 ***
 

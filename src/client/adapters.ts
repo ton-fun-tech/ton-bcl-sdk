@@ -6,6 +6,7 @@ export type AnyObject = Record<string, any>;
 
 export function normalizeCoin(coin: AnyObject): Coin {
     return {
+        id: coin.id,
         address: Address.parse(coin.address),
         metadata: coin.metadata,
         totalSupply: BigInt(coin.totalSupply),
@@ -30,7 +31,7 @@ export function normalizeCoinEvent(event: AnyObject): BclEvent {
             newSupply: BigInt(event.newSupply),
             tonLiqCollected: BigInt(event.tonLiqCollected),
             referral: event.referral,
-        };
+        }
     } else if (event.type === "sell") {
         return {
             type: "sell",
@@ -46,7 +47,21 @@ export function normalizeCoinEvent(event: AnyObject): BclEvent {
             type: "send_liq",
             tonLiq: BigInt(event.tonLiq),
             jettonLiq: BigInt(event.jettonLiq)
-        };
+        }
+    } else if (event.type === "deployment") {
+        return {
+            type: "deployment",
+            metadata: event.metadata,
+            totalSupply: BigInt(event.totalSupply),
+            bclSupply: BigInt(event.bclSupply),
+            liqSupply: BigInt(event.liqSupply),
+            lastTradeDate: event.lastTradeDate,
+            authorAddress: Address.parse(event.authorAddress),
+            tradingEnabled: event.tradingEnabled,
+            tonLiqCollected: BigInt(event.tonLiqCollected),
+            referral: event.referral,
+            createdAt: event.createdAt
+        }
     }
 
     throw new Error("Unknown BCL event: " + JSON.stringify(event));

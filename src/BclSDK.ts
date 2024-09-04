@@ -26,18 +26,6 @@ type SdkOptions = {
     masterAddress: Address
 };
 
-type SdkOptionsSimple = {
-    /**
-     * Instance of TonApi
-     */
-    tonapiClient: Api<any>;
-    clientOptions: Omit<ClientOptions, "tonApi" | "masterAddress">;
-    /**
-     * Address of the BCL master contract
-     */
-    masterAddress: Address
-};
-
 export class BclSDK {
     readonly apiProvider: AnyApiProvider;
     readonly api: BclClient;
@@ -111,17 +99,5 @@ export class BclSDK {
 
     static create(options: SdkOptions) {
         return new BclSDK(options);
-    }
-
-    static createSimple(options: SdkOptionsSimple) {
-        return new BclSDK({
-            clientOptions: {
-                ...options.clientOptions,
-                tonApi: options.tonapiClient,
-                masterAddress: options.masterAddress
-            },
-            apiProvider: simpleTonapiProvider(options.tonapiClient),
-            masterAddress: options.masterAddress
-        });
     }
 }
