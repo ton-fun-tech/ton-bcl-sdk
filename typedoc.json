@@ -5,6 +5,7 @@
   "typeDeclarationFormat": "table",
   "out": "./docs/reference",
   "entryPoints": [
+    "./src/client/**/*",
     "./src/BclSDK.ts",
     "./src/index.ts",
     "./src/wrappers/**/*",

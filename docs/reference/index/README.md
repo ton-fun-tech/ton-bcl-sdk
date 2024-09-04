@@ -10,19 +10,7 @@
 
 ### Type Aliases
 
-- [BclEvent](type-aliases/BclEvent.md)
-- [BclEventBuy](type-aliases/BclEventBuy.md)
-- [BclEventDeployment](type-aliases/BclEventDeployment.md)
-- [BclEventSell](type-aliases/BclEventSell.md)
-- [BclEventSendLiq](type-aliases/BclEventSendLiq.md)
-- [ClientOptions](type-aliases/ClientOptions.md)
-- [Coin](type-aliases/Coin.md)
-- [CoinMetadata](type-aliases/CoinMetadata.md)
-- [Event](type-aliases/Event.md)
-- [GetCoinsResponse](type-aliases/GetCoinsResponse.md)
-- [GetEventsResponse](type-aliases/GetEventsResponse.md)
 - [ReferralConfig](type-aliases/ReferralConfig.md)
-- [TransactionStatus](type-aliases/TransactionStatus.md)
 
 ### Variables
 
@@ -46,6 +34,36 @@ Re-exports [AnyApiProvider](../BclSDK/type-aliases/AnyApiProvider.md)
 ### BclData
 
 Re-exports [BclData](../wrappers/BclJetton/type-aliases/BclData.md)
+
+***
+
+### BclEvent
+
+Re-exports [BclEvent](../client/types/type-aliases/BclEvent.md)
+
+***
+
+### BclEventBuy
+
+Re-exports [BclEventBuy](../client/types/type-aliases/BclEventBuy.md)
+
+***
+
+### BclEventDeployment
+
+Re-exports [BclEventDeployment](../client/types/type-aliases/BclEventDeployment.md)
+
+***
+
+### BclEventSell
+
+Re-exports [BclEventSell](../client/types/type-aliases/BclEventSell.md)
+
+***
+
+### BclEventSendLiq
+
+Re-exports [BclEventSendLiq](../client/types/type-aliases/BclEventSendLiq.md)
 
 ***
 
@@ -73,6 +91,24 @@ Re-exports [BclWallet](../wrappers/BclWallet/classes/BclWallet.md)
 
 ***
 
+### ClientOptions
+
+Re-exports [ClientOptions](../client/types/type-aliases/ClientOptions.md)
+
+***
+
+### Coin
+
+Re-exports [Coin](../client/types/type-aliases/Coin.md)
+
+***
+
+### CoinMetadata
+
+Re-exports [CoinMetadata](../client/types/type-aliases/CoinMetadata.md)
+
+***
+
 ### ContractEvent
 
 Re-exports [ContractEvent](../wrappers/BclJetton/type-aliases/ContractEvent.md)
@@ -82,6 +118,12 @@ Re-exports [ContractEvent](../wrappers/BclJetton/type-aliases/ContractEvent.md)
 ### DeployCoinInput
 
 Re-exports [DeployCoinInput](../wrappers/BclMaster/type-aliases/DeployCoinInput.md)
+
+***
+
+### Event
+
+Re-exports [Event](../client/types/type-aliases/Event.md)
 
 ***
 
@@ -103,9 +145,27 @@ Re-exports [EventSendLiq](../wrappers/BclJetton/type-aliases/EventSendLiq.md)
 
 ***
 
+### GetCoinsResponse
+
+Re-exports [GetCoinsResponse](../client/types/type-aliases/GetCoinsResponse.md)
+
+***
+
+### GetEventsResponse
+
+Re-exports [GetEventsResponse](../client/types/type-aliases/GetEventsResponse.md)
+
+***
+
 ### HttpProviderBase
 
 Re-exports [HttpProviderBase](../provider/httpProviderBase/interfaces/HttpProviderBase.md)
+
+***
+
+### TransactionStatus
+
+Re-exports [TransactionStatus](../client/BclClient/type-aliases/TransactionStatus.md)
 
 ***
 

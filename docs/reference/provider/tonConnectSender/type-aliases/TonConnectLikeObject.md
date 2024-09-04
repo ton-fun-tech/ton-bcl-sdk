@@ -12,9 +12,9 @@
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `get account` | `null` \| `Account` | [provider/tonConnectSender.ts:25](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/409085fd00df7301399c36c4c1a47414008814a9/src/provider/tonConnectSender.ts#L25) |
-| `sendTransaction` | `Promise`\<`SendTransactionResponse`\> | [provider/tonConnectSender.ts:26](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/409085fd00df7301399c36c4c1a47414008814a9/src/provider/tonConnectSender.ts#L26) |
+| `get account` | `null` \| `Account` | [provider/tonConnectSender.ts:25](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/provider/tonConnectSender.ts#L25) |
+| `sendTransaction` | `Promise`\<`SendTransactionResponse`\> | [provider/tonConnectSender.ts:26](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/provider/tonConnectSender.ts#L26) |
 
 ## Defined in
 
-[provider/tonConnectSender.ts:24](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/409085fd00df7301399c36c4c1a47414008814a9/src/provider/tonConnectSender.ts#L24)
+[provider/tonConnectSender.ts:24](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/provider/tonConnectSender.ts#L24)
