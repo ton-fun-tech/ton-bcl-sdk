@@ -182,6 +182,7 @@ export type OnChainContentInput = {
     image?: string;
     decimals?: number;
     symbol?: string;
+    extra?: {[key: string]: string};
 };
 
 export function encodeOnChainContent(input: OnChainContentInput) {
@@ -207,6 +208,13 @@ export function encodeOnChainContent(input: OnChainContentInput) {
     }
     if (input.symbol) {
         dict.set(sha256ToBigint("symbol"), encodeTextSnake(input.symbol));
+    }
+
+    if (input.extra) {
+        for (let key in input.extra) {
+            let val = input.extra[key];
+            dict.set(sha256ToBigint(key), encodeTextSnake(val));
+        }
     }
 
     return beginCell()

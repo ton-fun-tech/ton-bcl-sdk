@@ -91,6 +91,12 @@ Re-exports [BclWallet](../wrappers/BclWallet/classes/BclWallet.md)
 
 ***
 
+### BuyOptions
+
+Re-exports [BuyOptions](../wrappers/BclJetton/type-aliases/BuyOptions.md)
+
+***
+
 ### ClientOptions
 
 Re-exports [ClientOptions](../client/types/type-aliases/ClientOptions.md)

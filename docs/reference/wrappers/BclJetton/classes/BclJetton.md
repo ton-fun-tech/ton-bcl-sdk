@@ -16,7 +16,7 @@ Wrapper for BCL contract
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `address` | `readonly` | `Address` | [wrappers/BclJetton.ts:139](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L139) |
+| `address` | `readonly` | `Address` | [wrappers/BclJetton.ts:161](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L161) |
 
 ## Methods
 
@@ -36,7 +36,7 @@ Returns BCL specific data
 
 #### Defined in
 
-[wrappers/BclJetton.ts:247](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L247)
+[wrappers/BclJetton.ts:269](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L269)
 
 ***
 
@@ -56,7 +56,7 @@ Returns current price of token
 
 #### Defined in
 
-[wrappers/BclJetton.ts:175](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L175)
+[wrappers/BclJetton.ts:197](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L197)
 
 ***
 
@@ -81,12 +81,12 @@ coins - amount of coins buyer would receive
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `coins` | `bigint` | [wrappers/BclJetton.ts:189](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L189) |
-| `fees` | `bigint` | [wrappers/BclJetton.ts:189](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L189) |
+| `coins` | `bigint` | [wrappers/BclJetton.ts:211](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L211) |
+| `fees` | `bigint` | [wrappers/BclJetton.ts:211](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L211) |
 
 #### Defined in
 
-[wrappers/BclJetton.ts:186](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L186)
+[wrappers/BclJetton.ts:208](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L208)
 
 ***
 
@@ -106,15 +106,15 @@ Returns standard Jetton data
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `adminAddress` | `null` \| `Address` | [wrappers/BclJetton.ts:155](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L155) |
-| `jettonContent` | `Cell` | [wrappers/BclJetton.ts:156](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L156) |
-| `jettonWalletCode` | `Cell` | [wrappers/BclJetton.ts:157](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L157) |
-| `mintable` | `boolean` | [wrappers/BclJetton.ts:154](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L154) |
-| `totalSupply` | `bigint` | [wrappers/BclJetton.ts:153](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L153) |
+| `adminAddress` | `null` \| `Address` | [wrappers/BclJetton.ts:177](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L177) |
+| `jettonContent` | `Cell` | [wrappers/BclJetton.ts:178](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L178) |
+| `jettonWalletCode` | `Cell` | [wrappers/BclJetton.ts:179](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L179) |
+| `mintable` | `boolean` | [wrappers/BclJetton.ts:176](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L176) |
+| `totalSupply` | `bigint` | [wrappers/BclJetton.ts:175](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L175) |
 
 #### Defined in
 
-[wrappers/BclJetton.ts:150](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L150)
+[wrappers/BclJetton.ts:172](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L172)
 
 ***
 
@@ -139,12 +139,12 @@ tons - amount of TONs user seller would receive
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `fees` | `bigint` | [wrappers/BclJetton.ts:208](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L208) |
-| `tons` | `bigint` | [wrappers/BclJetton.ts:208](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L208) |
+| `fees` | `bigint` | [wrappers/BclJetton.ts:230](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L230) |
+| `tons` | `bigint` | [wrappers/BclJetton.ts:230](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L230) |
 
 #### Defined in
 
-[wrappers/BclJetton.ts:205](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L205)
+[wrappers/BclJetton.ts:227](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L227)
 
 ***
 
@@ -166,7 +166,7 @@ Returns instance of BclWallet for given user address
 
 #### Defined in
 
-[wrappers/BclJetton.ts:271](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L271)
+[wrappers/BclJetton.ts:293](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L293)
 
 ***
 
@@ -188,7 +188,7 @@ Returns user Jetton wallet address
 
 #### Defined in
 
-[wrappers/BclJetton.ts:164](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L164)
+[wrappers/BclJetton.ts:186](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L186)
 
 ***
 
@@ -207,15 +207,7 @@ opts.minReceive - min amount of coins expected to receive
 
 • **via**: `Sender`
 
-• **opts**
-
-• **opts.minReceive**: `bigint`
-
-• **opts.queryId?**: `bigint`
-
-• **opts.referral**: `null` \| `Cell`
-
-• **opts.tons**: `bigint`
+• **opts**: [`BuyOptions`](../type-aliases/BuyOptions.md)
 
 #### Returns
 
@@ -223,7 +215,7 @@ opts.minReceive - min amount of coins expected to receive
 
 #### Defined in
 
-[wrappers/BclJetton.ts:224](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L224)
+[wrappers/BclJetton.ts:246](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L246)
 
 ***
 
@@ -241,4 +233,4 @@ opts.minReceive - min amount of coins expected to receive
 
 #### Defined in
 
-[wrappers/BclJetton.ts:143](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L143)
+[wrappers/BclJetton.ts:165](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L165)

@@ -131,6 +131,28 @@ export function parseBclEvent(cell: Cell): ContractEvent {
 }
 
 
+export type BuyOptions = {
+    /**
+     * Amount of TONs to spend on coins
+     */
+    tons: bigint;
+    /**
+     * Min amount of coins expected to receive
+     */
+    minReceive: bigint,
+    /**
+     * Trade referral
+     */
+    referral: Cell | null,
+    /**
+     * By default, coins and excess are sent to the sender of transaction
+     * You can override that by changing this field
+     */
+    buyerAddress?: Address,
+
+    queryId?: bigint
+}
+
 /**
  * Wrapper for BCL contract
  */
@@ -224,7 +246,7 @@ export class BclJetton implements Contract {
     async sendBuy(
         provider: ContractProvider,
         via: Sender,
-        opts: { tons: bigint; minReceive: bigint, referral: Cell | null, queryId?: bigint }
+        opts: BuyOptions
     ) {
         await provider.internal(via, {
             value: opts.tons + Constants.BUY_OPERATION_NETWORK_FEE,

@@ -79,6 +79,7 @@
       * [parseBclEvent](reference/wrappers/BclJetton/functions/parseBclEvent.md)
     * [type-aliases](reference/wrappers/BclJetton/type-aliases/README.md)
       * [BclData](reference/wrappers/BclJetton/type-aliases/BclData.md)
+      * [BuyOptions](reference/wrappers/BclJetton/type-aliases/BuyOptions.md)
       * [ContractEvent](reference/wrappers/BclJetton/type-aliases/ContractEvent.md)
       * [EventBuy](reference/wrappers/BclJetton/type-aliases/EventBuy.md)
       * [EventSell](reference/wrappers/BclJetton/type-aliases/EventSell.md)

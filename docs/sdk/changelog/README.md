@@ -1,3 +1,10 @@
+### 0.1.5
+- added ability to buy first coins in same transaction as coin deployment
+- added ability to pass extra metadata fields when deploying coin
+- fixed gas constants
+- updated docs
+- new master contract address
+
 ### 0.1.4
 - all api endpoints are paginated now
 - added method to fetch all server events, useful for syncing your server with ton.fun api

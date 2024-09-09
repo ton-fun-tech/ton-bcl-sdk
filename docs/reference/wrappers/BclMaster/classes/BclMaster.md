@@ -16,15 +16,18 @@ Wrapper for Master BCL contract
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `address` | `readonly` | `Address` | [wrappers/BclMaster.ts:30](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclMaster.ts#L30) |
+| `address` | `readonly` | `Address` | [wrappers/BclMaster.ts:54](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclMaster.ts#L54) |
 
 ## Methods
 
 ### sendDeployCoin()
 
-> **sendDeployCoin**(`provider`, `via`, `input`): `Promise`\<`void`\>
+> **sendDeployCoin**(`provider`, `via`, `input`, `firstBuy`?): `Promise`\<`void`\>
 
 Deploys coin
+
+firstBuy field allows to make first buy of coins in same transaction as coin deploy
+Important: when using firstBuy, don't forget to set buyerAddress to the users address, otherwise coins will be lost
 
 #### Parameters
 
@@ -34,13 +37,15 @@ Deploys coin
 
 • **input**: [`DeployCoinInput`](../type-aliases/DeployCoinInput.md)
 
+• **firstBuy?**: [`BuyOptions`](../../BclJetton/type-aliases/BuyOptions.md)
+
 #### Returns
 
 `Promise`\<`void`\>
 
 #### Defined in
 
-[wrappers/BclMaster.ts:41](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclMaster.ts#L41)
+[wrappers/BclMaster.ts:68](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclMaster.ts#L68)
 
 ***
 
@@ -58,4 +63,4 @@ Deploys coin
 
 #### Defined in
 
-[wrappers/BclMaster.ts:34](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclMaster.ts#L34)
+[wrappers/BclMaster.ts:58](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclMaster.ts#L58)

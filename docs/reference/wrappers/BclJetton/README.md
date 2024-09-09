@@ -15,6 +15,7 @@
 ### Type Aliases
 
 - [BclData](type-aliases/BclData.md)
+- [BuyOptions](type-aliases/BuyOptions.md)
 - [ContractEvent](type-aliases/ContractEvent.md)
 - [EventBuy](type-aliases/EventBuy.md)
 - [EventSell](type-aliases/EventSell.md)

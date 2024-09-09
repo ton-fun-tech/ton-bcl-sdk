@@ -10,9 +10,9 @@
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `api` | `readonly` | [`BclClient`](../../client/BclClient/classes/BclClient.md) | [BclSDK.ts:31](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/BclSDK.ts#L31) |
-| `apiProvider` | `readonly` | [`AnyApiProvider`](../type-aliases/AnyApiProvider.md) | [BclSDK.ts:30](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/BclSDK.ts#L30) |
-| `masterAddress` | `readonly` | `Address` | [BclSDK.ts:32](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/BclSDK.ts#L32) |
+| `api` | `readonly` | [`BclClient`](../../client/BclClient/classes/BclClient.md) | [BclSDK.ts:31](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/BclSDK.ts#L31) |
+| `apiProvider` | `readonly` | [`AnyApiProvider`](../type-aliases/AnyApiProvider.md) | [BclSDK.ts:30](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/BclSDK.ts#L30) |
+| `masterAddress` | `readonly` | `Address` | [BclSDK.ts:32](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/BclSDK.ts#L32) |
 
 ## Methods
 
@@ -34,7 +34,7 @@ Deploys new coin
 
 #### Defined in
 
-[BclSDK.ts:60](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/BclSDK.ts#L60)
+[BclSDK.ts:60](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/BclSDK.ts#L60)
 
 ***
 
@@ -56,12 +56,12 @@ Returns amount of coins one can get for providing given amount of TONs
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `coins` | `bigint` | [wrappers/BclJetton.ts:189](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L189) |
-| `fees` | `bigint` | [wrappers/BclJetton.ts:189](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L189) |
+| `coins` | `bigint` | [wrappers/BclJetton.ts:211](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L211) |
+| `fees` | `bigint` | [wrappers/BclJetton.ts:211](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L211) |
 
 #### Defined in
 
-[BclSDK.ts:68](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/BclSDK.ts#L68)
+[BclSDK.ts:68](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/BclSDK.ts#L68)
 
 ***
 
@@ -83,12 +83,12 @@ Returns amount of TONs one can get for providing given amount of coins
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `fees` | `bigint` | [wrappers/BclJetton.ts:208](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L208) |
-| `tons` | `bigint` | [wrappers/BclJetton.ts:208](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/wrappers/BclJetton.ts#L208) |
+| `fees` | `bigint` | [wrappers/BclJetton.ts:230](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L230) |
+| `tons` | `bigint` | [wrappers/BclJetton.ts:230](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/wrappers/BclJetton.ts#L230) |
 
 #### Defined in
 
-[BclSDK.ts:76](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/BclSDK.ts#L76)
+[BclSDK.ts:76](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/BclSDK.ts#L76)
 
 ***
 
@@ -110,7 +110,7 @@ Returns users balance for given coin
 
 #### Defined in
 
-[BclSDK.ts:84](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/BclSDK.ts#L84)
+[BclSDK.ts:84](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/BclSDK.ts#L84)
 
 ***
 
@@ -132,7 +132,7 @@ Returns users balance for given coin
 
 #### Defined in
 
-[BclSDK.ts:96](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/BclSDK.ts#L96)
+[BclSDK.ts:96](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/BclSDK.ts#L96)
 
 ***
 
@@ -152,7 +152,7 @@ Returns instance of coin wrapper by its address
 
 #### Defined in
 
-[BclSDK.ts:43](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/BclSDK.ts#L43)
+[BclSDK.ts:43](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/BclSDK.ts#L43)
 
 ***
 
@@ -178,7 +178,7 @@ address of user
 
 #### Defined in
 
-[BclSDK.ts:52](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/BclSDK.ts#L52)
+[BclSDK.ts:52](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/BclSDK.ts#L52)
 
 ***
 
@@ -196,4 +196,4 @@ address of user
 
 #### Defined in
 
-[BclSDK.ts:100](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/3dee4fb16df3d2a9b10fc9541cf29b0c93974b86/src/BclSDK.ts#L100)
+[BclSDK.ts:100](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/BclSDK.ts#L100)
