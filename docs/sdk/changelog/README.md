@@ -1,3 +1,6 @@
+### 0.1.8
+- fixed coins deployment again
+- 
 ### 0.1.7
 - fixed coins deployment
 

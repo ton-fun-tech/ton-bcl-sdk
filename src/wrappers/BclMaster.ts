@@ -87,6 +87,9 @@ export class BclMaster implements Contract {
             .storeAddress(input.authorAddress)
             .storeRef(input.referral ?? beginCell().endCell())
 
+
+        let forwardBody: Cell|null = null
+
         if (firstBuy) {
             let buyMessage = beginCell()
                 .storeUint(crc32str("op::buy"), 32)
@@ -98,8 +101,10 @@ export class BclMaster implements Contract {
                 buyMessage.storeAddress(firstBuy.buyerAddress)
             }
 
-            message.storeMaybeRef(buyMessage.endCell())
+            forwardBody = buyMessage.endCell()
         }
+
+        message.storeMaybeRef(forwardBody)
 
         await provider.internal(via, {
             value: Constants.COIN_DEPLOYMENT_PRICE,
