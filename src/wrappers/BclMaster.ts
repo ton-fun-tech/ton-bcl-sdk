@@ -98,7 +98,7 @@ export class BclMaster implements Contract {
                 buyMessage.storeAddress(firstBuy.buyerAddress)
             }
 
-            message.storeRef(buyMessage.endCell())
+            message.storeMaybeRef(buyMessage.endCell())
         }
 
         await provider.internal(via, {

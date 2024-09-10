@@ -1,3 +1,6 @@
+### 0.1.7
+- fixed coins deployment
+
 ### 0.1.6
 - added `firstBuy` field to `deployCoin` method of SDK
 

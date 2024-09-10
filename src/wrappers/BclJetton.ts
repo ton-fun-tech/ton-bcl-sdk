@@ -256,7 +256,7 @@ export class BclJetton implements Contract {
                 .storeUint(crc32str("op::buy"), 32)
                 .storeUint(opts.queryId ?? 0, 64)
                 .storeCoins(opts.minReceive)
-                .storeMaybeRef(opts.referral)
+                .storeRef(opts.referral || beginCell().endCell())
                 .endCell()
         });
     }
