@@ -1,3 +1,6 @@
+### 0.1.6
+- added `firstBuy` field to `deployCoin` method of SDK
+
 ### 0.1.5
 - added ability to buy first coins in same transaction as coin deployment
 - added ability to pass extra metadata fields when deploying coin

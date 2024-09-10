@@ -4,7 +4,7 @@ import { Address, Cell, Contract, OpenedContract, Sender } from "@ton/core";
 import { BclClient } from "./client/BclClient";
 import { ClientOptions } from "./client/types";
 import { simpleTonapiProvider } from "./provider/simpleTonapiProvider";
-import { BclJetton } from "./wrappers/BclJetton";
+import {BclJetton, BuyOptions} from "./wrappers/BclJetton";
 import { BclMaster, DeployCoinInput } from "./wrappers/BclMaster";
 import { HttpProviderBase } from "./provider/httpProviderBase";
 
@@ -57,9 +57,9 @@ export class BclSDK {
     /**
      * Deploys new coin
      */
-    async deployCoin(sender: Sender, config: DeployCoinInput) {
+    async deployCoin(sender: Sender, config: DeployCoinInput, firstBuy?: BuyOptions) {
         const master = this.apiProvider.open(BclMaster.createFromAddress(this.masterAddress));
-        await master.sendDeployCoin(sender, config);
+        await master.sendDeployCoin(sender, config, firstBuy);
     }
 
     /**

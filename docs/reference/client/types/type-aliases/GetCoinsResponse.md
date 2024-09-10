@@ -12,9 +12,9 @@
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `cursor` | `string` \| `null` | [client/types.ts:67](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/client/types.ts#L67) |
-| `items` | [`Coin`](Coin.md)[] | [client/types.ts:66](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/client/types.ts#L66) |
+| `cursor` | `string` \| `null` | [client/types.ts:67](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/client/types.ts#L67) |
+| `items` | [`Coin`](Coin.md)[] | [client/types.ts:66](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/client/types.ts#L66) |
 
 ## Defined in
 
-[client/types.ts:65](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7a6b80908ebab30efbdc8b1f59fd42fa681bf4aa/src/client/types.ts#L65)
+[client/types.ts:65](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/client/types.ts#L65)
