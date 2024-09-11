@@ -12,6 +12,7 @@ import {Constants} from "../constants";
 import {crc32str} from "../utils/crc32";
 import {encodeOnChainContent} from "../utils/tokenMetadata";
 import {BuyOptions} from "./BclJetton";
+import {RequiredFields} from "../utils/type";
 
 export type DeployCoinInput = {
     /**
@@ -69,7 +70,7 @@ export class BclMaster implements Contract {
         provider: ContractProvider,
         via: Sender,
         input: DeployCoinInput,
-        firstBuy?: BuyOptions
+        firstBuy?: RequiredFields<BuyOptions, 'buyerAddress'>
     ) {
         let content = encodeOnChainContent({
             name: input.name,
@@ -106,13 +107,17 @@ export class BclMaster implements Contract {
 
         message.storeMaybeRef(forwardBody)
 
+        let value = Constants.CoinDeploymentFee + Constants.CoinDeploymentGas
+
+        if (firstBuy) {
+            value += Constants.CoinBuyGas + firstBuy.tons
+        }
+
         await provider.internal(via, {
-            value: Constants.COIN_DEPLOYMENT_PRICE,
+            value,
             sendMode: SendMode.PAY_GAS_SEPARATELY,
             bounce: true,
             body: message.endCell()
         });
     }
 }
-
-// echo 0 |sudo tee /sys/class/leds/PWR/brightness

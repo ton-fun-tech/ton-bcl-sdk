@@ -7,6 +7,7 @@ import { simpleTonapiProvider } from "./provider/simpleTonapiProvider";
 import {BclJetton, BuyOptions} from "./wrappers/BclJetton";
 import { BclMaster, DeployCoinInput } from "./wrappers/BclMaster";
 import { HttpProviderBase } from "./provider/httpProviderBase";
+import {RequiredFields} from "./utils/type";
 
 export type AnyApiProvider = {
     open<T extends Contract>(contract: T): OpenedContract<T>;
@@ -55,9 +56,12 @@ export class BclSDK {
     }
 
     /**
-     * Deploys new coin
+     * Deploys coin
+     *
+     * firstBuy field allows to make first buy of coins in same transaction as coin deploy
+     * Important: when using firstBuy, don't forget to set buyerAddress to the users address, otherwise coins will be lost
      */
-    async deployCoin(sender: Sender, config: DeployCoinInput, firstBuy?: BuyOptions) {
+    async deployCoin(sender: Sender, config: DeployCoinInput, firstBuy?: RequiredFields<BuyOptions, 'buyerAddress'>) {
         const master = this.apiProvider.open(BclMaster.createFromAddress(this.masterAddress));
         await master.sendDeployCoin(sender, config, firstBuy);
     }

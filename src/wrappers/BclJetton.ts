@@ -259,7 +259,7 @@ export class BclJetton implements Contract {
         }
 
         await provider.internal(via, {
-            value: opts.tons + Constants.BUY_OPERATION_NETWORK_FEE,
+            value: opts.tons + Constants.CoinBuyGas,
             sendMode: SendMode.PAY_GAS_SEPARATELY,
             bounce: true,
             body: buyMessage.endCell()

@@ -1,8 +1,28 @@
 import {toNano} from "@ton/core";
 
 export const Constants = {
-    COIN_DEPLOYMENT_PRICE: toNano("0.1"),
-    BUY_OPERATION_NETWORK_FEE: toNano("0.05"),
-    SELL_OPERATION_NETWORK_FEE: toNano("0.06"),
-    WALLET_UNLOCK_OPERATION_NETWORK_FEE: toNano("0.05")
+    /**
+     * Service fee on coin deployment
+     */
+    CoinDeploymentFee: toNano('0'),
+
+    /**
+     * Amount of gas consumed for coin deployment
+     */
+    CoinDeploymentGas: toNano('0.05'),
+
+    /**
+     * Amount of gas consumed on buy operation
+     */
+    CoinBuyGas: toNano('0.05'),
+
+    /**
+     * Amount of gas consumed on sell operation
+     */
+    CoinSellGas: toNano('0.05'),
+
+    /**
+     * Amount of gas consumed for wallet unlock operation
+     */
+    WalletUnlockGas: toNano('0.05'),
 };

@@ -16,7 +16,7 @@ Wrapper for Master BCL contract
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `address` | `readonly` | `Address` | [wrappers/BclMaster.ts:54](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/wrappers/BclMaster.ts#L54) |
+| `address` | `readonly` | `Address` | [wrappers/BclMaster.ts:55](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/wrappers/BclMaster.ts#L55) |
 
 ## Methods
 
@@ -37,7 +37,7 @@ Important: when using firstBuy, don't forget to set buyerAddress to the users ad
 
 • **input**: [`DeployCoinInput`](../type-aliases/DeployCoinInput.md)
 
-• **firstBuy?**: [`BuyOptions`](../../BclJetton/type-aliases/BuyOptions.md)
+• **firstBuy?**: `RequiredFields`\<[`BuyOptions`](../../BclJetton/type-aliases/BuyOptions.md), `"buyerAddress"`\>
 
 #### Returns
 
@@ -45,7 +45,7 @@ Important: when using firstBuy, don't forget to set buyerAddress to the users ad
 
 #### Defined in
 
-[wrappers/BclMaster.ts:68](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/wrappers/BclMaster.ts#L68)
+[wrappers/BclMaster.ts:69](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/wrappers/BclMaster.ts#L69)
 
 ***
 
@@ -63,4 +63,4 @@ Important: when using firstBuy, don't forget to set buyerAddress to the users ad
 
 #### Defined in
 
-[wrappers/BclMaster.ts:58](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/wrappers/BclMaster.ts#L58)
+[wrappers/BclMaster.ts:59](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/wrappers/BclMaster.ts#L59)

@@ -10,9 +10,9 @@
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `api` | `readonly` | [`BclClient`](../../client/BclClient/classes/BclClient.md) | [BclSDK.ts:31](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/BclSDK.ts#L31) |
-| `apiProvider` | `readonly` | [`AnyApiProvider`](../type-aliases/AnyApiProvider.md) | [BclSDK.ts:30](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/BclSDK.ts#L30) |
-| `masterAddress` | `readonly` | `Address` | [BclSDK.ts:32](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/BclSDK.ts#L32) |
+| `api` | `readonly` | [`BclClient`](../../client/BclClient/classes/BclClient.md) | [BclSDK.ts:32](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/BclSDK.ts#L32) |
+| `apiProvider` | `readonly` | [`AnyApiProvider`](../type-aliases/AnyApiProvider.md) | [BclSDK.ts:31](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/BclSDK.ts#L31) |
+| `masterAddress` | `readonly` | `Address` | [BclSDK.ts:33](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/BclSDK.ts#L33) |
 
 ## Methods
 
@@ -20,7 +20,10 @@
 
 > **deployCoin**(`sender`, `config`, `firstBuy`?): `Promise`\<`void`\>
 
-Deploys new coin
+Deploys coin
+
+firstBuy field allows to make first buy of coins in same transaction as coin deploy
+Important: when using firstBuy, don't forget to set buyerAddress to the users address, otherwise coins will be lost
 
 #### Parameters
 
@@ -28,7 +31,7 @@ Deploys new coin
 
 • **config**: [`DeployCoinInput`](../../wrappers/BclMaster/type-aliases/DeployCoinInput.md)
 
-• **firstBuy?**: [`BuyOptions`](../../wrappers/BclJetton/type-aliases/BuyOptions.md)
+• **firstBuy?**: `RequiredFields`\<[`BuyOptions`](../../wrappers/BclJetton/type-aliases/BuyOptions.md), `"buyerAddress"`\>
 
 #### Returns
 
@@ -36,7 +39,7 @@ Deploys new coin
 
 #### Defined in
 
-[BclSDK.ts:60](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/BclSDK.ts#L60)
+[BclSDK.ts:64](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/BclSDK.ts#L64)
 
 ***
 
@@ -58,12 +61,12 @@ Returns amount of coins one can get for providing given amount of TONs
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `coins` | `bigint` | [wrappers/BclJetton.ts:211](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/wrappers/BclJetton.ts#L211) |
-| `fees` | `bigint` | [wrappers/BclJetton.ts:211](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/wrappers/BclJetton.ts#L211) |
+| `coins` | `bigint` | [wrappers/BclJetton.ts:211](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/wrappers/BclJetton.ts#L211) |
+| `fees` | `bigint` | [wrappers/BclJetton.ts:211](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/wrappers/BclJetton.ts#L211) |
 
 #### Defined in
 
-[BclSDK.ts:68](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/BclSDK.ts#L68)
+[BclSDK.ts:72](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/BclSDK.ts#L72)
 
 ***
 
@@ -85,12 +88,12 @@ Returns amount of TONs one can get for providing given amount of coins
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `fees` | `bigint` | [wrappers/BclJetton.ts:230](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/wrappers/BclJetton.ts#L230) |
-| `tons` | `bigint` | [wrappers/BclJetton.ts:230](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/wrappers/BclJetton.ts#L230) |
+| `fees` | `bigint` | [wrappers/BclJetton.ts:230](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/wrappers/BclJetton.ts#L230) |
+| `tons` | `bigint` | [wrappers/BclJetton.ts:230](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/wrappers/BclJetton.ts#L230) |
 
 #### Defined in
 
-[BclSDK.ts:76](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/BclSDK.ts#L76)
+[BclSDK.ts:80](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/BclSDK.ts#L80)
 
 ***
 
@@ -112,7 +115,7 @@ Returns users balance for given coin
 
 #### Defined in
 
-[BclSDK.ts:84](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/BclSDK.ts#L84)
+[BclSDK.ts:88](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/BclSDK.ts#L88)
 
 ***
 
@@ -134,7 +137,7 @@ Returns users balance for given coin
 
 #### Defined in
 
-[BclSDK.ts:96](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/BclSDK.ts#L96)
+[BclSDK.ts:100](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/BclSDK.ts#L100)
 
 ***
 
@@ -154,7 +157,7 @@ Returns instance of coin wrapper by its address
 
 #### Defined in
 
-[BclSDK.ts:43](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/BclSDK.ts#L43)
+[BclSDK.ts:44](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/BclSDK.ts#L44)
 
 ***
 
@@ -180,7 +183,7 @@ address of user
 
 #### Defined in
 
-[BclSDK.ts:52](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/BclSDK.ts#L52)
+[BclSDK.ts:53](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/BclSDK.ts#L53)
 
 ***
 
@@ -198,4 +201,4 @@ address of user
 
 #### Defined in
 
-[BclSDK.ts:100](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/ef763c160920e1ad75340ad15c4b7021fb9ec8c0/src/BclSDK.ts#L100)
+[BclSDK.ts:104](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/BclSDK.ts#L104)

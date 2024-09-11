@@ -1,3 +1,8 @@
+### 0.1.10
+- documented constants
+- fixed amount of tons sent on coin deploy operation
+- buyerAddress is now required field when deploying coin with first buy
+
 ### 0.1.9
 - fixes buy operation
 

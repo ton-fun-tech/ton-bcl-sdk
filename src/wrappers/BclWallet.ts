@@ -47,7 +47,7 @@ export class BclWallet implements Contract {
         opts: { amount: bigint; minReceive: bigint; referral: Cell|null, queryId: bigint },
     ) {
         await provider.internal(via, {
-            value: Constants.SELL_OPERATION_NETWORK_FEE,
+            value: Constants.CoinSellGas,
             sendMode: SendMode.PAY_GAS_SEPARATELY,
             bounce: true,
             body: beginCell()
@@ -65,7 +65,7 @@ export class BclWallet implements Contract {
      */
     async sendUnlockWallet(provider: ContractProvider, via: Sender, opts: { queryId?: bigint }) {
         await provider.internal(via, {
-            value: Constants.WALLET_UNLOCK_OPERATION_NETWORK_FEE,
+            value: Constants.WalletUnlockGas,
             sendMode: SendMode.PAY_GAS_SEPARATELY,
             bounce: true,
             body: beginCell()
