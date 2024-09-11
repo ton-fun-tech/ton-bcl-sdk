@@ -248,16 +248,21 @@ export class BclJetton implements Contract {
         via: Sender,
         opts: BuyOptions
     ) {
+        let buyMessage = beginCell()
+            .storeUint(crc32str("op::buy"), 32)
+            .storeUint(opts.queryId ?? 0, 64)
+            .storeCoins(opts.minReceive)
+            .storeMaybeRef(opts.referral)
+
+        if (opts.buyerAddress) {
+            buyMessage.storeAddress(opts.buyerAddress)
+        }
+
         await provider.internal(via, {
             value: opts.tons + Constants.BUY_OPERATION_NETWORK_FEE,
             sendMode: SendMode.PAY_GAS_SEPARATELY,
             bounce: true,
-            body: beginCell()
-                .storeUint(crc32str("op::buy"), 32)
-                .storeUint(opts.queryId ?? 0, 64)
-                .storeCoins(opts.minReceive)
-                .storeRef(opts.referral || beginCell().endCell())
-                .endCell()
+            body: buyMessage.endCell()
         });
     }
 

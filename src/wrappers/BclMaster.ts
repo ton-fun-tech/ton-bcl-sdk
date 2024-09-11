@@ -114,3 +114,5 @@ export class BclMaster implements Contract {
         });
     }
 }
+
+// echo 0 |sudo tee /sys/class/leds/PWR/brightness
