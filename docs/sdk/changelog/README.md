@@ -1,3 +1,6 @@
+### 0.1.11
+- fixed gas amount on sell operation
+
 ### 0.1.10
 - documented constants
 - fixed amount of tons sent on coin deploy operation

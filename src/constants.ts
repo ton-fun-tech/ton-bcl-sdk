@@ -19,7 +19,7 @@ export const Constants = {
     /**
      * Amount of gas consumed on sell operation
      */
-    CoinSellGas: toNano('0.05'),
+    CoinSellGas: toNano('0.06'),
 
     /**
      * Amount of gas consumed for wallet unlock operation
