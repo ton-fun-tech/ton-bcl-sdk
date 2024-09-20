@@ -1,3 +1,12 @@
+### 0.2.1
+- added `tradingCloseFee` field to `Coin` and `BclEventDeployment`
+- deployed new versions of contracts
+
+### 0.2.0
+- `getCoinsForTons` now does not include gas fees in calculations
+- Added `BclMaster.getMasterData` method to retrieve master contract data.
+- Added `BclMaster.getCoinsForTons` method to calculate the amount of coins that can be bought for a given amount of TONs.
+
 ### 0.1.11
 - fixed gas amount on sell operation
 

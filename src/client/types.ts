@@ -60,6 +60,10 @@ export type Coin = {
      * Timestamp of coin creation
      */
     createdAt: number;
+    /**
+     * Platform fee on trading close in TONs
+     */
+    tradingCloseFee: bigint
 };
 
 export type GetCoinsResponse = {
@@ -242,4 +246,8 @@ export type BclEventDeployment = {
      * Timestamp of coin creation
      */
     createdAt: number;
+    /**
+     * Platform fee on trading close in TONs
+     */
+    tradingCloseFee: bigint
 }

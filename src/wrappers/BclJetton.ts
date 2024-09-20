@@ -206,6 +206,7 @@ export class BclJetton implements Contract {
 
     /**
      * Returns how many coins one can get for given amount of TONs
+     * Calculations does not include TONs for gas. You should deduct Constants.CoinBuyGas from tons if you need to include gas fees.
      *
      * fees - amount of platform fees in TONs
      * coins - amount of coins buyer would receive

@@ -43,7 +43,7 @@ let sdk = BclSDK.create({
     clientOptions: {
         endpoint: 'https://test.tonfun.tech/api/v1',
     },
-    masterAddress: Address.parse('EQDUL9tM9VF8iTt8xhIRtE8RyW778cHx9Ovy5eQLjRUw9KJH')
+    masterAddress: Address.parse('EQB5a5QTYw8JGzvOjKgpWDF-Ypfv5jnwS5qCdXRkYAbwTQ_x')
 });
 ```
 
@@ -51,7 +51,7 @@ let sdk = BclSDK.create({
 
 For test environment you can use this parameters: 
 
-- BCL Master address - `EQDUL9tM9VF8iTt8xhIRtE8RyW778cHx9Ovy5eQLjRUw9KJH`
+- BCL Master address - `EQB5a5QTYw8JGzvOjKgpWDF-Ypfv5jnwS5qCdXRkYAbwTQ_x`
 - TonFun api address - `https://test.tonfun.tech/api/v1`
 
 Test coin parameters: 
@@ -61,6 +61,7 @@ Test coin parameters:
 - emission that is minted to STON.fi is 200M
 - total emission is 1000M
 - it costs ~6 TON to buyout whole 800M tokens 
+- trading close fee is 0 TON
 
 ## SDK Reference
 
