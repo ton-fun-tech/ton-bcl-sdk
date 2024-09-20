@@ -16,9 +16,56 @@ Wrapper for Master BCL contract
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `address` | `readonly` | `Address` | [wrappers/BclMaster.ts:55](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/wrappers/BclMaster.ts#L55) |
+| `address` | `readonly` | `Address` | [wrappers/BclMaster.ts:68](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/476d1616e5c488190cb07691b9395a27bae66f3a/src/wrappers/BclMaster.ts#L68) |
 
 ## Methods
+
+### getCoinsForTons()
+
+> **getCoinsForTons**(`provider`, `tons`): `Promise`\<`object`\>
+
+Get amount of coins that can be bought for given amount of TONs when deploying a coin
+
+#### Parameters
+
+• **provider**: `ContractProvider`
+
+• **tons**: `bigint`
+
+#### Returns
+
+`Promise`\<`object`\>
+
+| Name | Type | Defined in |
+| ------ | ------ | ------ |
+| `coins` | `bigint` | [wrappers/BclMaster.ts:140](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/476d1616e5c488190cb07691b9395a27bae66f3a/src/wrappers/BclMaster.ts#L140) |
+| `fees` | `bigint` | [wrappers/BclMaster.ts:140](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/476d1616e5c488190cb07691b9395a27bae66f3a/src/wrappers/BclMaster.ts#L140) |
+
+#### Defined in
+
+[wrappers/BclMaster.ts:140](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/476d1616e5c488190cb07691b9395a27bae66f3a/src/wrappers/BclMaster.ts#L140)
+
+***
+
+### getMasterData()
+
+> **getMasterData**(`provider`): `Promise`\<[`MasterData`](../type-aliases/MasterData.md)\>
+
+Get master parameters
+
+#### Parameters
+
+• **provider**: `ContractProvider`
+
+#### Returns
+
+`Promise`\<[`MasterData`](../type-aliases/MasterData.md)\>
+
+#### Defined in
+
+[wrappers/BclMaster.ts:153](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/476d1616e5c488190cb07691b9395a27bae66f3a/src/wrappers/BclMaster.ts#L153)
+
+***
 
 ### sendDeployCoin()
 
@@ -45,7 +92,7 @@ Important: when using firstBuy, don't forget to set buyerAddress to the users ad
 
 #### Defined in
 
-[wrappers/BclMaster.ts:69](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/wrappers/BclMaster.ts#L69)
+[wrappers/BclMaster.ts:82](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/476d1616e5c488190cb07691b9395a27bae66f3a/src/wrappers/BclMaster.ts#L82)
 
 ***
 
@@ -63,4 +110,4 @@ Important: when using firstBuy, don't forget to set buyerAddress to the users ad
 
 #### Defined in
 
-[wrappers/BclMaster.ts:59](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/0bba482950e2b0c3c4571bd8d4571c35b1dd45d1/src/wrappers/BclMaster.ts#L59)
+[wrappers/BclMaster.ts:72](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/476d1616e5c488190cb07691b9395a27bae66f3a/src/wrappers/BclMaster.ts#L72)

@@ -47,6 +47,19 @@ export type DeployCoinInput = {
     queryId?: bigint
 };
 
+export type MasterData = {
+    admin: Address
+    deploymentFee: bigint
+    coinAdmin: Address
+    coinTtl: number
+    bclSupply: bigint
+    liqSupply: bigint
+    feeAddress: Address
+    feeNumerator: number
+    feeDenominator: number
+    tradingCloseFee: bigint
+};
+
 /**
  * Wrapper for Master BCL contract
  */
@@ -119,5 +132,37 @@ export class BclMaster implements Contract {
             bounce: true,
             body: message.endCell()
         });
+    }
+
+    /**
+     * Get amount of coins that can be bought for given amount of TONs when deploying a coin
+     */
+    async getCoinsForTons(provider: ContractProvider, tons: bigint): Promise<{ fees: bigint, coins: bigint }> {
+        let res = await provider.get('coins_for_tons', [
+            {type: 'int', value: tons}
+        ]);
+        return {
+            fees: res.stack.readBigNumber(),
+            coins: res.stack.readBigNumber()
+        };
+    }
+
+    /**
+     * Get master parameters
+     */
+    async getMasterData(provider: ContractProvider): Promise<MasterData> {
+        let res = await provider.get('get_factory_data', []);
+        return {
+            admin: res.stack.readAddress(),
+            deploymentFee: res.stack.readBigNumber(),
+            coinAdmin: res.stack.readAddress(),
+            coinTtl: res.stack.readNumber(),
+            bclSupply: res.stack.readBigNumber(),
+            liqSupply: res.stack.readBigNumber(),
+            feeAddress: res.stack.readAddress(),
+            feeNumerator: res.stack.readNumber(),
+            feeDenominator: res.stack.readNumber(),
+            tradingCloseFee: res.stack.readBigNumber(),
+        };
     }
 }

@@ -56,6 +56,11 @@ export type BclData = {
      */
     tonLiqCollected: bigint
     referral: Cell
+
+    /**
+     * Fee taken when trading closes
+     */
+    tradingCloseFee: bigint
 }
 
 
@@ -288,7 +293,8 @@ export class BclJetton implements Contract {
             lastTradeDate: res.readNumber(),
             tradingEnabled: res.readBoolean(),
             tonLiqCollected: res.readBigNumber(),
-            referral: res.readCell()
+            referral: res.readCell(),
+            tradingCloseFee: res.readBigNumber(),
         };
     }
 
