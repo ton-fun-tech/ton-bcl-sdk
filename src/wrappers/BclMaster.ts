@@ -134,6 +134,9 @@ export class BclMaster implements Contract {
         });
     }
 
+    /**
+     * Get amount of coins that can be bought for given amount of TONs when deploying a coin
+     */
     async getCoinsForTons(provider: ContractProvider, tons: bigint): Promise<{ fees: bigint, coins: bigint }> {
         let res = await provider.get('coins_for_tons', [
             {type: 'int', value: tons}
@@ -144,7 +147,10 @@ export class BclMaster implements Contract {
         };
     }
 
-    async getFactoryData(provider: ContractProvider): Promise<MasterData> {
+    /**
+     * Get master parameters
+     */
+    async getMasterData(provider: ContractProvider): Promise<MasterData> {
         let res = await provider.get('get_factory_data', []);
         return {
             admin: res.stack.readAddress(),
