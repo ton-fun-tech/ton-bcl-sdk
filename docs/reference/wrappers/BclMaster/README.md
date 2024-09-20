@@ -15,3 +15,4 @@
 ### Type Aliases
 
 - [DeployCoinInput](type-aliases/DeployCoinInput.md)
+- [MasterData](type-aliases/MasterData.md)

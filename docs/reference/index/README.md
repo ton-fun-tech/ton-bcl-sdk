@@ -169,6 +169,12 @@ Re-exports [HttpProviderBase](../provider/httpProviderBase/interfaces/HttpProvid
 
 ***
 
+### MasterData
+
+Re-exports [MasterData](../wrappers/BclMaster/type-aliases/MasterData.md)
+
+***
+
 ### TransactionStatus
 
 Re-exports [TransactionStatus](../client/BclClient/type-aliases/TransactionStatus.md)
