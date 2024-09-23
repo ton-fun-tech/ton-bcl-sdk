@@ -12,9 +12,9 @@
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `cursor` | `string` \| `null` | [client/types.ts:72](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/476d1616e5c488190cb07691b9395a27bae66f3a/src/client/types.ts#L72) |
-| `items` | [`Event`](Event.md)[] | [client/types.ts:71](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/476d1616e5c488190cb07691b9395a27bae66f3a/src/client/types.ts#L71) |
+| `cursor` | `string` \| `null` | [client/types.ts:76](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7877991181ad2a3357235178011544813b695441/src/client/types.ts#L76) |
+| `items` | [`Event`](Event.md)[] | [client/types.ts:75](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7877991181ad2a3357235178011544813b695441/src/client/types.ts#L75) |
 
 ## Defined in
 
-[client/types.ts:70](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/476d1616e5c488190cb07691b9395a27bae66f3a/src/client/types.ts#L70)
+[client/types.ts:74](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7877991181ad2a3357235178011544813b695441/src/client/types.ts#L74)

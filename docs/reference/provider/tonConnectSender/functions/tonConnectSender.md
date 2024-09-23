@@ -18,4 +18,4 @@
 
 ## Defined in
 
-[provider/tonConnectSender.ts:30](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/476d1616e5c488190cb07691b9395a27bae66f3a/src/provider/tonConnectSender.ts#L30)
+[provider/tonConnectSender.ts:30](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7877991181ad2a3357235178011544813b695441/src/provider/tonConnectSender.ts#L30)

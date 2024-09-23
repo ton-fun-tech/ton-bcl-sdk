@@ -1,3 +1,7 @@
+### 0.2.2
+- added `getFirstCoinsForTons` method to `BclSDK`
+- added `getMasterData` method to `BclSDK`
+
 ### 0.2.1
 - added `tradingCloseFee` field to `Coin` and `BclEventDeployment`
 - deployed new versions of contracts
