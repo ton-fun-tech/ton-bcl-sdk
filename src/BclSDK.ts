@@ -97,6 +97,22 @@ export class BclSDK {
         }
     }
 
+    /**
+     * Returns amount of coins one can get for providing given amount of TONs on the first buy of a coin
+     */
+    async getFirstCoinsForTons(tons: bigint) {
+        const master = this.apiProvider.open(BclMaster.createFromAddress(this.masterAddress));
+        return await master.getCoinsForTons(tons);
+    }
+
+    /**
+     * Returns master contract data
+     */
+    async getMasterData() {
+        const master = this.apiProvider.open(BclMaster.createFromAddress(this.masterAddress));
+        return await master.getMasterData();
+    }
+
     open<T extends Contract>(contract: T) {
         return this.apiProvider.open(contract);
     }
