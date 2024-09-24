@@ -61,6 +61,14 @@ export type BclData = {
      * Fee taken when trading closes
      */
     tradingCloseFee: bigint
+    /**
+     * Total amount of TON that needs to be spent to buy the whole coin supply including fees
+     */
+    fullPriceTon: bigint
+    /**
+     * The fees part of the full price
+     */
+    fullPriceTonFees: bigint
 }
 
 
@@ -296,6 +304,8 @@ export class BclJetton implements Contract {
             tonLiqCollected: res.readBigNumber(),
             referral: res.readCell(),
             tradingCloseFee: res.readBigNumber(),
+            fullPriceTon: res.readBigNumber(),
+            fullPriceTonFees: res.readBigNumber(),
         };
     }
 

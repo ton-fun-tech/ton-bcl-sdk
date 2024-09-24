@@ -1,3 +1,6 @@
+### 0.2.3
+- added `fullPriceTon` and `fullPriceTonFees` fields to `MasterData` and `BclData`
+
 ### 0.2.2
 - added `getFirstCoinsForTons` method to `BclSDK`
 - added `getMasterData` method to `BclSDK`

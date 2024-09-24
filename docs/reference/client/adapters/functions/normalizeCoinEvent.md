@@ -18,4 +18,4 @@
 
 ## Defined in
 
-[client/adapters.ts:25](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7877991181ad2a3357235178011544813b695441/src/client/adapters.ts#L25)
+[client/adapters.ts:25](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/92a3af862d3966a626243e6c0b5a6592026707d2/src/client/adapters.ts#L25)
