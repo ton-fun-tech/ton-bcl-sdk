@@ -24,4 +24,4 @@
 
 ## Defined in
 
-[provider/simpleTonapiProvider.ts:29](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7877991181ad2a3357235178011544813b695441/src/provider/simpleTonapiProvider.ts#L29)
+[provider/simpleTonapiProvider.ts:29](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/92a3af862d3966a626243e6c0b5a6592026707d2/src/provider/simpleTonapiProvider.ts#L29)

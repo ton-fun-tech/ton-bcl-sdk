@@ -12,10 +12,10 @@
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `jettonLiq` | `bigint` | [wrappers/BclJetton.ts:75](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7877991181ad2a3357235178011544813b695441/src/wrappers/BclJetton.ts#L75) |
-| `tonLiq` | `bigint` | [wrappers/BclJetton.ts:74](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7877991181ad2a3357235178011544813b695441/src/wrappers/BclJetton.ts#L74) |
-| `type` | `"send_liq"` | [wrappers/BclJetton.ts:73](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7877991181ad2a3357235178011544813b695441/src/wrappers/BclJetton.ts#L73) |
+| `jettonLiq` | `bigint` | [wrappers/BclJetton.ts:83](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/92a3af862d3966a626243e6c0b5a6592026707d2/src/wrappers/BclJetton.ts#L83) |
+| `tonLiq` | `bigint` | [wrappers/BclJetton.ts:82](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/92a3af862d3966a626243e6c0b5a6592026707d2/src/wrappers/BclJetton.ts#L82) |
+| `type` | `"send_liq"` | [wrappers/BclJetton.ts:81](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/92a3af862d3966a626243e6c0b5a6592026707d2/src/wrappers/BclJetton.ts#L81) |
 
 ## Defined in
 
-[wrappers/BclJetton.ts:72](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7877991181ad2a3357235178011544813b695441/src/wrappers/BclJetton.ts#L72)
+[wrappers/BclJetton.ts:80](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/92a3af862d3966a626243e6c0b5a6592026707d2/src/wrappers/BclJetton.ts#L80)
