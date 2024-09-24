@@ -58,6 +58,8 @@ export type MasterData = {
     feeNumerator: number
     feeDenominator: number
     tradingCloseFee: bigint
+    fullPriceTon: bigint
+    fullPriceTonFees: bigint
 };
 
 /**
@@ -163,6 +165,8 @@ export class BclMaster implements Contract {
             feeNumerator: res.stack.readNumber(),
             feeDenominator: res.stack.readNumber(),
             tradingCloseFee: res.stack.readBigNumber(),
+            fullPriceTon: res.stack.readBigNumber(),
+            fullPriceTonFees: res.stack.readBigNumber(),
         };
     }
 }
