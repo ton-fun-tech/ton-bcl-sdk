@@ -43,7 +43,7 @@ let sdk = BclSDK.create({
     clientOptions: {
         endpoint: 'https://test.tonfun.tech/api/v1',
     },
-    masterAddress: Address.parse('EQB5a5QTYw8JGzvOjKgpWDF-Ypfv5jnwS5qCdXRkYAbwTQ_x')
+    masterAddress: Address.parse('EQDNvFwnPg01ECd_PHnXLq0gLevfRFnZUzFDmNtMYWt4Esvk')
 });
 ```
 
@@ -51,7 +51,7 @@ let sdk = BclSDK.create({
 
 For test environment you can use this parameters: 
 
-- BCL Master address - `EQB5a5QTYw8JGzvOjKgpWDF-Ypfv5jnwS5qCdXRkYAbwTQ_x`
+- BCL Master address - `EQDNvFwnPg01ECd_PHnXLq0gLevfRFnZUzFDmNtMYWt4Esvk`
 - TonFun api address - `https://test.tonfun.tech/api/v1`
 
 Test coin parameters: 
