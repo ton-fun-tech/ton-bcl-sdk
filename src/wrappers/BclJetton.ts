@@ -69,6 +69,14 @@ export type BclData = {
      * The fees part of the full price
      */
     fullPriceTonFees: bigint
+    /**
+     * Ston.fi v2 router that this jetton is using
+     */
+    routerAddress: Address
+    /**
+     * Router's pTON wallet address
+     */
+    routerPtonWalletAddress: Address
 }
 
 
@@ -306,6 +314,8 @@ export class BclJetton implements Contract {
             tradingCloseFee: res.readBigNumber(),
             fullPriceTon: res.readBigNumber(),
             fullPriceTonFees: res.readBigNumber(),
+            routerAddress: res.readAddress(),
+            routerPtonWalletAddress: res.readAddress(),
         };
     }
 
