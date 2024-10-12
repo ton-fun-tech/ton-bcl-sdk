@@ -64,6 +64,10 @@ export type Coin = {
      * Platform fee on trading close in TONs
      */
     tradingCloseFee: bigint
+    /**
+     * Ston.fi v2 router that this jetton is using
+     */
+    routerAddress: Address
 };
 
 export type GetCoinsResponse = {
@@ -250,4 +254,8 @@ export type BclEventDeployment = {
      * Platform fee on trading close in TONs
      */
     tradingCloseFee: bigint
+    /**
+     * Ston.fi v2 router that this jetton is using
+     */
+    routerAddress: Address
 }

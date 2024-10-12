@@ -1,3 +1,7 @@
+### 0.2.5
+- added `routerAddress` and `routerPtonWalletAddress` fields to `Coin` and `BclEventDeployment`
+- moved @ton dependencies to peerDependencies
+
 ### 0.2.4
 - added `routerAddress` and `routerPtonWalletAddress` fields to `BclData`
 - moved @ton dependencies to peerDependencies

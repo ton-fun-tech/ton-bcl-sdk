@@ -18,7 +18,8 @@ export function normalizeCoin(coin: AnyObject): Coin {
         tonLiqCollected: BigInt(coin.tonLiqCollected),
         referral: coin.referral,
         createdAt: coin.createdAt,
-        tradingCloseFee: BigInt(coin.tradingCloseFee)
+        tradingCloseFee: BigInt(coin.tradingCloseFee),
+        routerAddress: Address.parse(coin.routerAddress),
     };
 }
 
@@ -62,7 +63,8 @@ export function normalizeCoinEvent(event: AnyObject): BclEvent {
             tonLiqCollected: BigInt(event.tonLiqCollected),
             referral: event.referral,
             createdAt: event.createdAt,
-            tradingCloseFee: BigInt(event.tradingCloseFee)
+            tradingCloseFee: BigInt(event.tradingCloseFee),
+            routerAddress: Address.parse(event.routerAddress),
         }
     }
 
