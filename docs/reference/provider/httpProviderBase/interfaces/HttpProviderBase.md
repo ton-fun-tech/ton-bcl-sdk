@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[provider/httpProviderBase.ts:2](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/147c953c460604d17963909907f6eeca3782e941/src/provider/httpProviderBase.ts#L2)
+[provider/httpProviderBase.ts:2](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/provider/httpProviderBase.ts#L2)
 
 ***
 
@@ -54,4 +54,4 @@
 
 #### Defined in
 
-[provider/httpProviderBase.ts:3](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/147c953c460604d17963909907f6eeca3782e941/src/provider/httpProviderBase.ts#L3)
+[provider/httpProviderBase.ts:3](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/provider/httpProviderBase.ts#L3)

@@ -77,6 +77,7 @@
             * [BclJetton](reference/wrappers/BclJetton/classes/BclJetton.md)
         * [functions](reference/wrappers/BclJetton/functions/README.md)
             * [parseBclEvent](reference/wrappers/BclJetton/functions/parseBclEvent.md)
+            * [parseStorage](reference/wrappers/BclJetton/functions/parseStorage.md)
         * [type-aliases](reference/wrappers/BclJetton/type-aliases/README.md)
             * [BclData](reference/wrappers/BclJetton/type-aliases/BclData.md)
             * [BuyOptions](reference/wrappers/BclJetton/type-aliases/BuyOptions.md)

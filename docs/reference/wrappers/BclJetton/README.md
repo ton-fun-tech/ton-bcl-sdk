@@ -24,3 +24,4 @@
 ### Functions
 
 - [parseBclEvent](functions/parseBclEvent.md)
+- [parseStorage](functions/parseStorage.md)

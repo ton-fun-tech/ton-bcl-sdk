@@ -12,14 +12,14 @@
 
 | Name | Type | Description | Defined in |
 | ------ | ------ | ------ | ------ |
-| `coinAddress` | `Address` | Address of coin to which event corresponds | [client/types.ts:122](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/147c953c460604d17963909907f6eeca3782e941/src/client/types.ts#L122) |
-| `event` | [`BclEvent`](BclEvent.md) | Event itself | [client/types.ts:118](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/147c953c460604d17963909907f6eeca3782e941/src/client/types.ts#L118) |
-| `id` | `string` | Id of the event, used for pagination | [client/types.ts:98](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/147c953c460604d17963909907f6eeca3782e941/src/client/types.ts#L98) |
-| `lt` | `number` | Lt of the transaction in which event occurred | [client/types.ts:102](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/147c953c460604d17963909907f6eeca3782e941/src/client/types.ts#L102) |
-| `queryId` | `string` | Query id of message that initiated transaction | [client/types.ts:114](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/147c953c460604d17963909907f6eeca3782e941/src/client/types.ts#L114) |
-| `txHash` | `string` | Hash of transaction of event | [client/types.ts:110](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/147c953c460604d17963909907f6eeca3782e941/src/client/types.ts#L110) |
-| `txUtime` | `number` | Unixtime of transaction | [client/types.ts:106](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/147c953c460604d17963909907f6eeca3782e941/src/client/types.ts#L106) |
+| `coinAddress` | `Address` | Address of coin to which event corresponds | [client/types.ts:122](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/types.ts#L122) |
+| `event` | [`BclEvent`](BclEvent.md) | Event itself | [client/types.ts:118](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/types.ts#L118) |
+| `id` | `string` | Id of the event, used for pagination | [client/types.ts:98](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/types.ts#L98) |
+| `lt` | `number` | Lt of the transaction in which event occurred | [client/types.ts:102](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/types.ts#L102) |
+| `queryId` | `string` | Query id of message that initiated transaction | [client/types.ts:114](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/types.ts#L114) |
+| `txHash` | `string` | Hash of transaction of event | [client/types.ts:110](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/types.ts#L110) |
+| `txUtime` | `number` | Unixtime of transaction | [client/types.ts:106](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/types.ts#L106) |
 
 ## Defined in
 
-[client/types.ts:94](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/147c953c460604d17963909907f6eeca3782e941/src/client/types.ts#L94)
+[client/types.ts:94](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/types.ts#L94)

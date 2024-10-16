@@ -1,3 +1,6 @@
+### 0.2.6
+- added `parseStorage` function to decode BclJetton on-chain storage 
+
 ### 0.2.5
 - added `routerAddress` and `routerPtonWalletAddress` fields to `Coin` and `BclEventDeployment`
 - moved @ton dependencies to peerDependencies
