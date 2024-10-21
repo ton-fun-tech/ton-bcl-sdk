@@ -20,10 +20,10 @@ Unpacks referral cell to config
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `extraTag` | `undefined` \| `Address` | [utils/referral.ts:72](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/utils/referral.ts#L72) |
-| `partner` | `Address` | [utils/referral.ts:70](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/utils/referral.ts#L70) |
-| `platformTag` | `undefined` \| `Address` | [utils/referral.ts:71](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/utils/referral.ts#L71) |
+| `extraTag` | `undefined` \| `Address` | [utils/referral.ts:72](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/utils/referral.ts#L72) |
+| `partner` | `Address` | [utils/referral.ts:70](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/utils/referral.ts#L70) |
+| `platformTag` | `undefined` \| `Address` | [utils/referral.ts:71](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/utils/referral.ts#L71) |
 
 ## Defined in
 
-[utils/referral.ts:48](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/utils/referral.ts#L48)
+[utils/referral.ts:48](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/utils/referral.ts#L48)

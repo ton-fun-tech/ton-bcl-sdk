@@ -22,14 +22,14 @@
 
 #### Defined in
 
-[client/BclClient.ts:13](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/BclClient.ts#L13)
+[client/BclClient.ts:13](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/client/BclClient.ts#L13)
 
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `endpoint` | `readonly` | `string` | [client/BclClient.ts:10](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/BclClient.ts#L10) |
-| `httpProvider` | `readonly` | [`HttpProviderBase`](../../../provider/httpProviderBase/interfaces/HttpProviderBase.md) | [client/BclClient.ts:11](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/BclClient.ts#L11) |
+| `endpoint` | `readonly` | `string` | [client/BclClient.ts:10](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/client/BclClient.ts#L10) |
+| `httpProvider` | `readonly` | [`HttpProviderBase`](../../../provider/httpProviderBase/interfaces/HttpProviderBase.md) | [client/BclClient.ts:11](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/client/BclClient.ts#L11) |
 
 ## Methods
 
@@ -49,7 +49,7 @@ Returns information on specific coin
 
 #### Defined in
 
-[client/BclClient.ts:38](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/BclClient.ts#L38)
+[client/BclClient.ts:38](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/client/BclClient.ts#L38)
 
 ***
 
@@ -77,7 +77,7 @@ Returns events of specific coin
 
 #### Defined in
 
-[client/BclClient.ts:47](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/BclClient.ts#L47)
+[client/BclClient.ts:47](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/client/BclClient.ts#L47)
 
 ***
 
@@ -103,13 +103,13 @@ Returns paginated list of all coins
 
 #### Defined in
 
-[client/BclClient.ts:25](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/BclClient.ts#L25)
+[client/BclClient.ts:25](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/client/BclClient.ts#L25)
 
 ***
 
 ### fetchServerEvents()
 
-> **fetchServerEvents**(`opts`?): `Promise`\<`object`\>
+> **fetchServerEvents**(`opts`?): `Promise`\<[`GetEventsResponse`](../../types/type-aliases/GetEventsResponse.md)\>
 
 Returns all events in ton.fun system
 Useful for syncing with server
@@ -126,13 +126,8 @@ Useful for syncing with server
 
 #### Returns
 
-`Promise`\<`object`\>
-
-| Name | Type | Default value | Defined in |
-| ------ | ------ | ------ | ------ |
-| `cursor` | `any` | res.cursor | [client/BclClient.ts:86](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/BclClient.ts#L86) |
-| `items` | `any` | - | [client/BclClient.ts:75](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/BclClient.ts#L75) |
+`Promise`\<[`GetEventsResponse`](../../types/type-aliases/GetEventsResponse.md)\>
 
 #### Defined in
 
-[client/BclClient.ts:71](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/client/BclClient.ts#L71)
+[client/BclClient.ts:71](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/client/BclClient.ts#L71)

@@ -1,3 +1,6 @@
+### 0.2.7
+- changed `Event.lt` and `Event.queryId` types to `bigint`
+
 ### 0.2.6
 - added `parseStorage` function to decode BclJetton on-chain storage 
 

@@ -18,8 +18,8 @@
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `open` | `OpenedContract`\<`T`\> | [provider/simpleTonapiProvider.ts:21](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/provider/simpleTonapiProvider.ts#L21) |
+| `open` | `OpenedContract`\<`T`\> | [provider/simpleTonapiProvider.ts:21](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/provider/simpleTonapiProvider.ts#L21) |
 
 ## Defined in
 
-[provider/simpleTonapiProvider.ts:19](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/1fc3a1571223b62191ac87d755bf607bcf1766cd/src/provider/simpleTonapiProvider.ts#L19)
+[provider/simpleTonapiProvider.ts:19](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/provider/simpleTonapiProvider.ts#L19)
