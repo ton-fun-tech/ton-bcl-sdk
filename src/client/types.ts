@@ -99,7 +99,7 @@ export type Event = {
     /**
      * Lt of the transaction in which event occurred
      */
-    lt: number
+    lt: bigint
     /**
      * Unixtime of transaction
      */
@@ -111,7 +111,7 @@ export type Event = {
     /**
      * Query id of message that initiated transaction
      */
-    queryId: string
+    queryId: bigint
     /**
      * Event itself
      */

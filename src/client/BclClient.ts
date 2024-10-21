@@ -51,10 +51,10 @@ export class BclClient {
             items: res.items.map((e: any) => {
                 return {
                     id: e.id,
-                    lt: e.lt,
+                    lt: BigInt(e.lt),
                     txUtime: e.txUtime,
                     txHash: e.txHash,
-                    queryId: e.queryId,
+                    queryId: BigInt(e.queryId),
                     event: normalizeCoinEvent(e.event),
                     coinAddress: Address.parse(e.coinAddress)
                 };
@@ -68,17 +68,17 @@ export class BclClient {
      * Useful for syncing with server
      * @param opts
      */
-    fetchServerEvents = async (opts?: { first?: number, after?: string, reverse?: boolean }) => {
+    fetchServerEvents = async (opts?: { first?: number, after?: string, reverse?: boolean }): Promise<GetEventsResponse> => {
         const res = await this.fetch('/getServerEvents', { query: opts ?? {} })
 
         return {
             items: res.items.map((e: any) => {
                 return {
                     id: e.id,
-                    lt: e.lt,
+                    lt: BigInt(e.lt),
                     txUtime: e.txUtime,
                     txHash: e.txHash,
-                    queryId: e.queryId,
+                    queryId: BigInt(e.queryId),
                     event: normalizeCoinEvent(e.event),
                     coinAddress: Address.parse(e.coinAddress)
                 };
