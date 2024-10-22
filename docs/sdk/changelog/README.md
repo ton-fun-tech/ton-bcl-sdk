@@ -1,3 +1,6 @@
+### 0.2.9
+- updated dependency to `@ton/core`
+
 ### 0.2.8
 - added `MasterData.isEnabled` field which indicates if master contract is enabled now
 - removed `Constants.CoinDeploymentFee`, you can use `BclMaster.getMasterData` to fetch that value from network
