@@ -15,4 +15,5 @@
 ### Type Aliases
 
 - [DeployCoinInput](type-aliases/DeployCoinInput.md)
+- [DeployCoinOpts](type-aliases/DeployCoinOpts.md)
 - [MasterData](type-aliases/MasterData.md)

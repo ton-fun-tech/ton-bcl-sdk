@@ -47,6 +47,18 @@ export type DeployCoinInput = {
     queryId?: bigint
 };
 
+export type DeployCoinOpts = {
+    /**
+     * firstBuy field allows to make first buy of coins in same transaction as coin deploy
+     * Important: when using firstBuy, don't forget to set buyerAddress to the users address, otherwise coins will be lost
+     */
+    firstBuy?: RequiredFields<BuyOptions, 'buyerAddress'>,
+    /**
+     * By default, deployment fee is fetched from network, but you can specify it directly using this field
+     */
+    forceDeploymentFee?: bigint
+}
+
 export type MasterData = {
     admin: Address
     deploymentFee: bigint
@@ -60,6 +72,10 @@ export type MasterData = {
     tradingCloseFee: bigint
     fullPriceTon: bigint
     fullPriceTonFees: bigint
+    /**
+     * Whether this contract is enabled, if not new coin deployments will fail
+     */
+    isEnabled: boolean
 };
 
 /**
@@ -78,14 +94,17 @@ export class BclMaster implements Contract {
     /**
      * Deploys coin
      *
-     * firstBuy field allows to make first buy of coins in same transaction as coin deploy
+     * opts.firstBuy field allows to make first buy of coins in same transaction as coin deploy
      * Important: when using firstBuy, don't forget to set buyerAddress to the users address, otherwise coins will be lost
+     *
+     * Note that deployment fee is fetched from network
+     * In order to get rid of extra network call you can specify it directly via `forceDeploymentFee`
      */
     async sendDeployCoin(
         provider: ContractProvider,
         via: Sender,
         input: DeployCoinInput,
-        firstBuy?: RequiredFields<BuyOptions, 'buyerAddress'>
+        opts?: DeployCoinOpts,
     ) {
         let content = encodeOnChainContent({
             name: input.name,
@@ -106,15 +125,15 @@ export class BclMaster implements Contract {
 
         let forwardBody: Cell|null = null
 
-        if (firstBuy) {
+        if (opts?.firstBuy) {
             let buyMessage = beginCell()
                 .storeUint(crc32str("op::buy"), 32)
-                .storeUint(firstBuy.queryId ?? 0, 64)
-                .storeCoins(firstBuy.minReceive)
-                .storeMaybeRef(firstBuy.referral)
+                .storeUint(opts.firstBuy.queryId ?? 0, 64)
+                .storeCoins(opts.firstBuy.minReceive)
+                .storeMaybeRef(opts.firstBuy.referral)
 
-            if (firstBuy.buyerAddress) {
-                buyMessage.storeAddress(firstBuy.buyerAddress)
+            if (opts.firstBuy.buyerAddress) {
+                buyMessage.storeAddress(opts.firstBuy.buyerAddress)
             }
 
             forwardBody = buyMessage.endCell()
@@ -122,10 +141,20 @@ export class BclMaster implements Contract {
 
         message.storeMaybeRef(forwardBody)
 
-        let value = Constants.CoinDeploymentFee + Constants.CoinDeploymentGas
 
-        if (firstBuy) {
-            value += Constants.CoinBuyGas + firstBuy.tons
+        let deploymentFee: bigint
+
+        if (opts?.forceDeploymentFee) {
+            deploymentFee = opts.forceDeploymentFee
+        } else {
+            let data = await this.getMasterData(provider)
+            deploymentFee = data.deploymentFee
+        }
+
+        let value = deploymentFee + Constants.CoinDeploymentGas
+
+        if (opts?.firstBuy) {
+            value += Constants.CoinBuyGas + opts.firstBuy.tons
         }
 
         await provider.internal(via, {
@@ -167,6 +196,7 @@ export class BclMaster implements Contract {
             tradingCloseFee: res.stack.readBigNumber(),
             fullPriceTon: res.stack.readBigNumber(),
             fullPriceTonFees: res.stack.readBigNumber(),
+            isEnabled: res.stack.readBoolean()
         };
     }
 }

@@ -43,7 +43,7 @@ let sdk = BclSDK.create({
     clientOptions: {
         endpoint: 'https://test-indexer-3a4wy.ondigitalocean.app',
     },
-    masterAddress: Address.parse('UQBuUf6q1yPXBVf49_QxZKw-rZrR026xEXdjVwSmIkuX5iN4')
+    masterAddress: Address.parse('EQBNKpUQDKl9A5AaiyAfcYP7TEJkgguMIfrX_fRgCmW-vhXr')
 });
 ```
 
@@ -51,7 +51,7 @@ let sdk = BclSDK.create({
 
 For test environment you can use this parameters: 
 
-- BCL Master address - `UQBuUf6q1yPXBVf49_QxZKw-rZrR026xEXdjVwSmIkuX5iN4`
+- BCL Master address - `EQBNKpUQDKl9A5AaiyAfcYP7TEJkgguMIfrX_fRgCmW-vhXr`
 - TonFun api address - `https://test-indexer-3a4wy.ondigitalocean.app/`
 
 Test coin parameters: 

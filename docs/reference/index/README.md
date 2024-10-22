@@ -127,6 +127,12 @@ Re-exports [DeployCoinInput](../wrappers/BclMaster/type-aliases/DeployCoinInput.
 
 ***
 
+### DeployCoinOpts
+
+Re-exports [DeployCoinOpts](../wrappers/BclMaster/type-aliases/DeployCoinOpts.md)
+
+***
+
 ### Event
 
 Re-exports [Event](../client/types/type-aliases/Event.md)

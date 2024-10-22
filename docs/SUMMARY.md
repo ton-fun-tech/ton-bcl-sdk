@@ -15,6 +15,7 @@
 
 ## SDK Api reference
 
+
 * [BclSDK](reference/BclSDK/README.md)
     * [classes](reference/BclSDK/classes/README.md)
         * [BclSDK](reference/BclSDK/classes/BclSDK.md)
@@ -90,6 +91,7 @@
             * [BclMaster](reference/wrappers/BclMaster/classes/BclMaster.md)
         * [type-aliases](reference/wrappers/BclMaster/type-aliases/README.md)
             * [DeployCoinInput](reference/wrappers/BclMaster/type-aliases/DeployCoinInput.md)
+            * [DeployCoinOpts](reference/wrappers/BclMaster/type-aliases/DeployCoinOpts.md)
             * [MasterData](reference/wrappers/BclMaster/type-aliases/MasterData.md)
     * [BclWallet](reference/wrappers/BclWallet/README.md)
         * [classes](reference/wrappers/BclWallet/classes/README.md)

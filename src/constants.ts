@@ -2,11 +2,6 @@ import {toNano} from "@ton/core";
 
 export const Constants = {
     /**
-     * Service fee on coin deployment
-     */
-    CoinDeploymentFee: toNano('0'),
-
-    /**
      * Amount of gas consumed for coin deployment
      */
     CoinDeploymentGas: toNano('0.05'),

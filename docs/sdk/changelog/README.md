@@ -1,3 +1,8 @@
+### 0.2.8
+- added `MasterData.isEnabled` field which indicates if master contract is enabled now
+- removed `Constants.CoinDeploymentFee`, you can use `BclMaster.getMasterData` to fetch that value from network
+- added `forceDeploymentFee` option to `sendDeployCoin` which could be used to manually specify deployment fee, otherwise it's got automatically fetched from network
+
 ### 0.2.7
 - changed `Event.lt` and `Event.queryId` types to `bigint`
 

@@ -10,21 +10,22 @@
 
 ## Type declaration
 
-| Name | Type | Defined in |
-| ------ | ------ | ------ |
-| `admin` | `Address` | [wrappers/BclMaster.ts:51](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/wrappers/BclMaster.ts#L51) |
-| `bclSupply` | `bigint` | [wrappers/BclMaster.ts:55](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/wrappers/BclMaster.ts#L55) |
-| `coinAdmin` | `Address` | [wrappers/BclMaster.ts:53](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/wrappers/BclMaster.ts#L53) |
-| `coinTtl` | `number` | [wrappers/BclMaster.ts:54](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/wrappers/BclMaster.ts#L54) |
-| `deploymentFee` | `bigint` | [wrappers/BclMaster.ts:52](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/wrappers/BclMaster.ts#L52) |
-| `feeAddress` | `Address` | [wrappers/BclMaster.ts:57](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/wrappers/BclMaster.ts#L57) |
-| `feeDenominator` | `number` | [wrappers/BclMaster.ts:59](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/wrappers/BclMaster.ts#L59) |
-| `feeNumerator` | `number` | [wrappers/BclMaster.ts:58](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/wrappers/BclMaster.ts#L58) |
-| `fullPriceTon` | `bigint` | [wrappers/BclMaster.ts:61](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/wrappers/BclMaster.ts#L61) |
-| `fullPriceTonFees` | `bigint` | [wrappers/BclMaster.ts:62](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/wrappers/BclMaster.ts#L62) |
-| `liqSupply` | `bigint` | [wrappers/BclMaster.ts:56](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/wrappers/BclMaster.ts#L56) |
-| `tradingCloseFee` | `bigint` | [wrappers/BclMaster.ts:60](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/wrappers/BclMaster.ts#L60) |
+| Name | Type | Description | Defined in |
+| ------ | ------ | ------ | ------ |
+| `admin` | `Address` | - | [wrappers/BclMaster.ts:63](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L63) |
+| `bclSupply` | `bigint` | - | [wrappers/BclMaster.ts:67](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L67) |
+| `coinAdmin` | `Address` | - | [wrappers/BclMaster.ts:65](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L65) |
+| `coinTtl` | `number` | - | [wrappers/BclMaster.ts:66](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L66) |
+| `deploymentFee` | `bigint` | - | [wrappers/BclMaster.ts:64](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L64) |
+| `feeAddress` | `Address` | - | [wrappers/BclMaster.ts:69](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L69) |
+| `feeDenominator` | `number` | - | [wrappers/BclMaster.ts:71](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L71) |
+| `feeNumerator` | `number` | - | [wrappers/BclMaster.ts:70](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L70) |
+| `fullPriceTon` | `bigint` | - | [wrappers/BclMaster.ts:73](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L73) |
+| `fullPriceTonFees` | `bigint` | - | [wrappers/BclMaster.ts:74](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L74) |
+| `isEnabled` | `boolean` | Whether this contract is enabled, if not new coin deployments will fail | [wrappers/BclMaster.ts:78](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L78) |
+| `liqSupply` | `bigint` | - | [wrappers/BclMaster.ts:68](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L68) |
+| `tradingCloseFee` | `bigint` | - | [wrappers/BclMaster.ts:72](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L72) |
 
 ## Defined in
 
-[wrappers/BclMaster.ts:50](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/wrappers/BclMaster.ts#L50)
+[wrappers/BclMaster.ts:62](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclMaster.ts#L62)

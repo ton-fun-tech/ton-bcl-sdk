@@ -18,4 +18,4 @@
 
 ## Defined in
 
-[utils/crc32.ts:25](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/efd7a3c444985cb69bafe2086033980ed29e3462/src/utils/crc32.ts#L25)
+[utils/crc32.ts:25](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/utils/crc32.ts#L25)
