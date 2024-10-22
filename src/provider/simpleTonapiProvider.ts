@@ -72,7 +72,7 @@ export function createProvider(
         async get(name, args) {
             const result = await client.blockchain.execGetMethodForBlockchainAccount(
                 params.address.toRawString(),
-                name,
+                name as string,
                 { args: args?.map(TupleItemToTonapiString) }
             );
 
