@@ -20,4 +20,4 @@ Packs referral config to cell
 
 ## Defined in
 
-[utils/referral.ts:24](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/utils/referral.ts#L24)
+[utils/referral.ts:24](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/utils/referral.ts#L24)

@@ -12,14 +12,14 @@
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `newSupply` | `bigint` | [wrappers/BclJetton.ts:109](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclJetton.ts#L109) |
-| `referral` | `Cell` \| `null` | [wrappers/BclJetton.ts:111](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclJetton.ts#L111) |
-| `supplyDelta` | `bigint` | [wrappers/BclJetton.ts:108](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclJetton.ts#L108) |
-| `tonLiqCollected` | `bigint` | [wrappers/BclJetton.ts:110](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclJetton.ts#L110) |
-| `tonValue` | `bigint` | [wrappers/BclJetton.ts:107](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclJetton.ts#L107) |
-| `trader` | `Address` | [wrappers/BclJetton.ts:106](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclJetton.ts#L106) |
-| `type` | `"sell"` | [wrappers/BclJetton.ts:105](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclJetton.ts#L105) |
+| `newSupply` | `bigint` | [wrappers/BclJetton.ts:109](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclJetton.ts#L109) |
+| `referral` | `Cell` \| `null` | [wrappers/BclJetton.ts:111](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclJetton.ts#L111) |
+| `supplyDelta` | `bigint` | [wrappers/BclJetton.ts:108](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclJetton.ts#L108) |
+| `tonLiqCollected` | `bigint` | [wrappers/BclJetton.ts:110](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclJetton.ts#L110) |
+| `tonValue` | `bigint` | [wrappers/BclJetton.ts:107](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclJetton.ts#L107) |
+| `trader` | `Address` | [wrappers/BclJetton.ts:106](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclJetton.ts#L106) |
+| `type` | `"sell"` | [wrappers/BclJetton.ts:105](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclJetton.ts#L105) |
 
 ## Defined in
 
-[wrappers/BclJetton.ts:104](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/fc0c4a576371f976e2ad8eb17107815a1dcdee28/src/wrappers/BclJetton.ts#L104)
+[wrappers/BclJetton.ts:104](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclJetton.ts#L104)

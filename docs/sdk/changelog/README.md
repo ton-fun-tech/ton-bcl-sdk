@@ -1,3 +1,6 @@
+### 0.2.10
+- added `seed`, `coinCode` and `walletCode` fields to `MasterData`
+
 ### 0.2.9
 - updated dependency to `@ton/core`
 
