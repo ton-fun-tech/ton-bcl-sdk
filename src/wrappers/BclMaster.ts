@@ -76,6 +76,9 @@ export type MasterData = {
      * Whether this contract is enabled, if not new coin deployments will fail
      */
     isEnabled: boolean
+    seed: bigint
+    coinCode: Cell
+    walletCode: Cell
 };
 
 /**
@@ -196,7 +199,10 @@ export class BclMaster implements Contract {
             tradingCloseFee: res.stack.readBigNumber(),
             fullPriceTon: res.stack.readBigNumber(),
             fullPriceTonFees: res.stack.readBigNumber(),
-            isEnabled: res.stack.readBoolean()
+            isEnabled: res.stack.readBoolean(),
+            seed: res.stack.readBigNumber(),
+            coinCode: res.stack.readCell(),
+            walletCode: res.stack.readCell(),
         };
     }
 }
