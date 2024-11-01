@@ -16,7 +16,7 @@ Wrapper for Master BCL contract
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `address` | `readonly` | `Address` | [wrappers/BclMaster.ts:89](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclMaster.ts#L89) |
+| `address` | `readonly` | `Address` | [wrappers/BclMaster.ts:89](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclMaster.ts#L89) |
 
 ## Methods
 
@@ -38,12 +38,12 @@ Get amount of coins that can be bought for given amount of TONs when deploying a
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `coins` | `bigint` | [wrappers/BclMaster.ts:174](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclMaster.ts#L174) |
-| `fees` | `bigint` | [wrappers/BclMaster.ts:174](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclMaster.ts#L174) |
+| `coins` | `bigint` | [wrappers/BclMaster.ts:174](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclMaster.ts#L174) |
+| `fees` | `bigint` | [wrappers/BclMaster.ts:174](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclMaster.ts#L174) |
 
 #### Defined in
 
-[wrappers/BclMaster.ts:174](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclMaster.ts#L174)
+[wrappers/BclMaster.ts:174](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclMaster.ts#L174)
 
 ***
 
@@ -63,7 +63,7 @@ Get master parameters
 
 #### Defined in
 
-[wrappers/BclMaster.ts:187](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclMaster.ts#L187)
+[wrappers/BclMaster.ts:187](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclMaster.ts#L187)
 
 ***
 
@@ -95,7 +95,7 @@ In order to get rid of extra network call you can specify it directly via `force
 
 #### Defined in
 
-[wrappers/BclMaster.ts:106](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclMaster.ts#L106)
+[wrappers/BclMaster.ts:106](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclMaster.ts#L106)
 
 ***
 
@@ -113,4 +113,4 @@ In order to get rid of extra network call you can specify it directly via `force
 
 #### Defined in
 
-[wrappers/BclMaster.ts:93](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclMaster.ts#L93)
+[wrappers/BclMaster.ts:93](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclMaster.ts#L93)

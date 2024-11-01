@@ -21,4 +21,4 @@ Events are external messages generated on sell/buy/send liq operations
 
 ## Defined in
 
-[wrappers/BclJetton.ts:119](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/wrappers/BclJetton.ts#L119)
+[wrappers/BclJetton.ts:119](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclJetton.ts#L119)

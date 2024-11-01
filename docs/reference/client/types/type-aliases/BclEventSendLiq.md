@@ -15,10 +15,10 @@ all coins are sold and liquidity is sent to STON.fi
 
 | Name | Type | Description | Defined in |
 | ------ | ------ | ------ | ------ |
-| `jettonLiq` | `bigint` | Amount of tokens sent to STON.fi | [client/types.ts:144](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/client/types.ts#L144) |
-| `tonLiq` | `bigint` | Amount of TONs sent to pool in STON.fi | [client/types.ts:140](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/client/types.ts#L140) |
-| `type` | `"send_liq"` | - | [client/types.ts:136](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/client/types.ts#L136) |
+| `jettonLiq` | `bigint` | Amount of tokens sent to STON.fi | [client/types.ts:144](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/client/types.ts#L144) |
+| `tonLiq` | `bigint` | Amount of TONs sent to pool in STON.fi | [client/types.ts:140](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/client/types.ts#L140) |
+| `type` | `"send_liq"` | - | [client/types.ts:136](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/client/types.ts#L136) |
 
 ## Defined in
 
-[client/types.ts:135](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/7ee0ff6d1b35906d586d4feb09739aac48bafc30/src/client/types.ts#L135)
+[client/types.ts:135](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/client/types.ts#L135)
