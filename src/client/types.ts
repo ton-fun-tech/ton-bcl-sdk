@@ -152,7 +152,7 @@ export type BclEventBuy = {
     /**
      * Address of the user
      */
-    trader: Address;
+    trader: Address | null;
     /**
      * Incoming ton value (without network fees)
      */
@@ -181,7 +181,7 @@ export type BclEventSell = {
     /**
      * Address of the user
      */
-    trader: Address;
+    trader: Address | null;
     /**
      * Amount of TONs user received for sale
      */
@@ -232,7 +232,7 @@ export type BclEventDeployment = {
     /**
      * Address of the author
      */
-    authorAddress: Address;
+    authorAddress: Address | null;
     /**
      * Is trading phase active
      * false means coin is listed on STON.fi you cant sell/buy coins via BCL contract

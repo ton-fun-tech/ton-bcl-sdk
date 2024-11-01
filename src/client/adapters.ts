@@ -27,7 +27,7 @@ export function normalizeCoinEvent(event: AnyObject): BclEvent {
     if (event.type === "buy") {
         return {
             type: "buy",
-            trader: Address.parse(event.trader),
+            trader: event.trader === '' ? null : Address.parse(event.trader),
             tonValue: BigInt(event.tonValue),
             supplyDelta: BigInt(event.supplyDelta),
             newSupply: BigInt(event.newSupply),
@@ -37,7 +37,7 @@ export function normalizeCoinEvent(event: AnyObject): BclEvent {
     } else if (event.type === "sell") {
         return {
             type: "sell",
-            trader: Address.parse(event.trader),
+            trader: event.trader === '' ? null : Address.parse(event.trader),
             tonValue: BigInt(event.tonValue),
             supplyDelta: BigInt(event.supplyDelta),
             newSupply: BigInt(event.newSupply),
@@ -58,7 +58,7 @@ export function normalizeCoinEvent(event: AnyObject): BclEvent {
             bclSupply: BigInt(event.bclSupply),
             liqSupply: BigInt(event.liqSupply),
             lastTradeDate: event.lastTradeDate,
-            authorAddress: Address.parse(event.authorAddress),
+            authorAddress: event.authorAddress === '' ? null : Address.parse(event.authorAddress),
             tradingEnabled: event.tradingEnabled,
             tonLiqCollected: BigInt(event.tonLiqCollected),
             referral: event.referral,
