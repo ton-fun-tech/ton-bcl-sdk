@@ -1,3 +1,6 @@
+### 0.2.11
+- `BclEventBuy.trader` now could be null
+
 ### 0.2.10
 - added `seed`, `coinCode` and `walletCode` fields to `MasterData`
 
