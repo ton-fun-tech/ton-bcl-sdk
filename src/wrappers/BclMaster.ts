@@ -10,7 +10,7 @@ import {
 
 import {Constants} from "../constants";
 import {crc32str} from "../utils/crc32";
-import {encodeOnChainContent} from "../utils/tokenMetadata";
+import {storeTokenOnchainContent} from "../utils/tokenMetadata";
 import {BuyOptions} from "./BclJetton";
 import {RequiredFields} from "../utils/type";
 
@@ -35,6 +35,10 @@ export type DeployCoinInput = {
      * symbol of the coin
      */
     symbol?: string;
+    /**
+     * social links of coin
+     */
+    socialLinks?: string[]
     /**
      * Referral of coin deployment
      */
@@ -109,14 +113,17 @@ export class BclMaster implements Contract {
         input: DeployCoinInput,
         opts?: DeployCoinOpts,
     ) {
-        let content = encodeOnChainContent({
-            name: input.name,
-            description: input.description,
-            image: input.imageUrl,
-            symbol: input.symbol,
-            decimals: 9,
-            extra: input.extraMetadata
-        })
+        let content = beginCell()
+            .store(storeTokenOnchainContent({
+                name: input.name,
+                description: input.description,
+                image: input.imageUrl,
+                symbol: input.symbol,
+                decimals: '9',
+                social_links: JSON.stringify(input.socialLinks),
+                ...input.extraMetadata
+            }))
+            .endCell()
 
         let message = beginCell()
             .storeUint(crc32str("op::deploy_coin"), 32)
