@@ -126,14 +126,20 @@ export class BclMaster implements Contract {
             .endCell()
 
         let message = beginCell()
-            .storeUint(crc32str("op::deploy_coin"), 32)
+            .storeUint(crc32str('op::deploy_coin'), 32)
             .storeUint(input.queryId ?? 0, 64)
             .storeRef(content)
             .storeAddress(input.authorAddress)
             .storeRef(input.referral ?? beginCell().endCell())
 
 
-        let forwardBody: Cell|null = null
+        // Buy default forward body is simple topup operation
+        // this way queryId is forwarded to coin contract
+        // and could be used for deployment detection
+        let forwardBody: Cell = beginCell()
+            .storeUint(crc32str('op::top_up'), 32)
+            .storeUint(input.queryId ?? 0, 64)
+            .endCell()
 
         if (opts?.firstBuy) {
             let buyMessage = beginCell()
