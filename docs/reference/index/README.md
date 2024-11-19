@@ -199,12 +199,6 @@ Re-exports [parseBclEvent](../wrappers/BclJetton/functions/parseBclEvent.md)
 
 ***
 
-### parseStorage
-
-Re-exports [parseStorage](../wrappers/BclJetton/functions/parseStorage.md)
-
-***
-
 ### simpleTonapiProvider
 
 Re-exports [simpleTonapiProvider](../provider/simpleTonapiProvider/functions/simpleTonapiProvider.md)

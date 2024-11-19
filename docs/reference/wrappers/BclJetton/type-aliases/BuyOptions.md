@@ -12,12 +12,12 @@
 
 | Name | Type | Description | Defined in |
 | ------ | ------ | ------ | ------ |
-| `buyerAddress` | `Address` | By default, coins and excess are sent to the sender of transaction You can override that by changing this field | [wrappers/BclJetton.ts:227](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclJetton.ts#L227) |
-| `minReceive` | `bigint` | Min amount of coins expected to receive | [wrappers/BclJetton.ts:218](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclJetton.ts#L218) |
-| `queryId` | `bigint` | - | [wrappers/BclJetton.ts:229](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclJetton.ts#L229) |
-| `referral` | `Cell` \| `null` | Trade referral | [wrappers/BclJetton.ts:222](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclJetton.ts#L222) |
-| `tons` | `bigint` | Amount of TONs to spend on coins | [wrappers/BclJetton.ts:214](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclJetton.ts#L214) |
+| `buyerAddress` | `Address` | By default, coins and excess are sent to the sender of transaction You can override that by changing this field | [wrappers/BclJetton.ts:171](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/wrappers/BclJetton.ts#L171) |
+| `minReceive` | `bigint` | Min amount of coins expected to receive | [wrappers/BclJetton.ts:162](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/wrappers/BclJetton.ts#L162) |
+| `queryId` | `bigint` | - | [wrappers/BclJetton.ts:173](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/wrappers/BclJetton.ts#L173) |
+| `referral` | `Cell` \| `null` | Trade referral | [wrappers/BclJetton.ts:166](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/wrappers/BclJetton.ts#L166) |
+| `tons` | `bigint` | Amount of TONs to spend on coins | [wrappers/BclJetton.ts:158](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/wrappers/BclJetton.ts#L158) |
 
 ## Defined in
 
-[wrappers/BclJetton.ts:210](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/wrappers/BclJetton.ts#L210)
+[wrappers/BclJetton.ts:154](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/wrappers/BclJetton.ts#L154)

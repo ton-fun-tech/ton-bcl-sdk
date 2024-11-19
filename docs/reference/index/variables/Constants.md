@@ -12,11 +12,11 @@
 
 | Name | Type | Description | Defined in |
 | ------ | ------ | ------ | ------ |
-| `CoinBuyGas` | `bigint` | Amount of gas consumed on buy operation | [constants.ts:12](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/constants.ts#L12) |
-| `CoinDeploymentGas` | `bigint` | Amount of gas consumed for coin deployment | [constants.ts:7](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/constants.ts#L7) |
-| `CoinSellGas` | `bigint` | Amount of gas consumed on sell operation | [constants.ts:17](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/constants.ts#L17) |
-| `WalletUnlockGas` | `bigint` | Amount of gas consumed for wallet unlock operation | [constants.ts:22](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/constants.ts#L22) |
+| `CoinBuyGas` | `bigint` | Amount of gas consumed on buy operation | [constants.ts:12](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/constants.ts#L12) |
+| `CoinDeploymentGas` | `bigint` | Amount of gas consumed for coin deployment | [constants.ts:7](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/constants.ts#L7) |
+| `CoinSellGas` | `bigint` | Amount of gas consumed on sell operation | [constants.ts:17](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/constants.ts#L17) |
+| `WalletUnlockGas` | `bigint` | Amount of gas consumed for wallet unlock operation | [constants.ts:22](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/constants.ts#L22) |
 
 ## Defined in
 
-[constants.ts:3](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/constants.ts#L3)
+[constants.ts:3](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/constants.ts#L3)

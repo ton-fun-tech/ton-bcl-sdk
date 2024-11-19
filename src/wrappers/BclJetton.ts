@@ -151,62 +151,6 @@ export function parseBclEvent(cell: Cell): ContractEvent {
     throw new Error('Unknown BCL event with id: ' + eventId.toString(16))
 }
 
-/**
- * Parses on-chain storage of BclJetton contract
- * useful if you're implementing your own indexer
- * @param cell
- */
-export function parseStorage(cell: Cell) {
-    let cs = cell.beginParse();
-    let totalSupply = cs.loadCoins();
-    let admin = cs.loadAddress();
-    let content = cs.loadRef();
-    let walletCode = cs.loadRef();
-    let ttl = cs.loadUint(32);
-    let lastTradeDate = cs.loadUint(32);
-    let tonLiqCollected = cs.loadCoins();
-
-    let innerCell = cs.loadRef().beginParse();
-    let bclSupply = innerCell.loadCoins();
-    let liqSupply = innerCell.loadCoins();
-    let authorAddress = innerCell.loadAddress();
-    let feeAddress = innerCell.loadAddress();
-    let tradingFeeNumerator = innerCell.loadUint(16);
-    let tradingFeeDenominator = innerCell.loadUint(16);
-    let tradingEnabled = innerCell.loadBit();
-    let referral = innerCell.loadRef();
-    let seed = innerCell.loadUint(64)
-    let tradingCloseFee = innerCell.loadCoins()
-
-    let dexCell = innerCell.loadRef().beginParse()
-    let routerAddress = dexCell.loadAddress()
-    let routerPtonWalletAddress = dexCell.loadAddress()
-
-    return {
-        admin,
-        content,
-        totalSupply,
-        bclSupply,
-        liqSupply,
-        walletCode,
-        ttl,
-        lastTradeDate,
-        tonLiqCollected,
-        authorAddress,
-        feeAddress,
-        tradingFee: {
-            numerator: tradingFeeNumerator,
-            denominator: tradingFeeDenominator
-        },
-        tradingEnabled,
-        referral,
-        seed,
-        tradingCloseFee,
-        routerAddress,
-        routerPtonWalletAddress
-    };
-}
-
 export type BuyOptions = {
     /**
      * Amount of TONs to spend on coins

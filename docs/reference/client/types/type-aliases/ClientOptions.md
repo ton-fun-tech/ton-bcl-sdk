@@ -12,9 +12,9 @@
 
 | Name | Type | Description | Defined in |
 | ------ | ------ | ------ | ------ |
-| `endpoint` | `string` | Link to BCL API endpoint | [client/types.ts:87](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/client/types.ts#L87) |
-| `httpProvider` | [`HttpProviderBase`](../../../provider/httpProviderBase/interfaces/HttpProviderBase.md) | Http client Provider | [client/types.ts:91](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/client/types.ts#L91) |
+| `endpoint` | `string` | Link to BCL API endpoint | [client/types.ts:89](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/client/types.ts#L89) |
+| `httpProvider` | [`HttpProviderBase`](../../../provider/httpProviderBase/interfaces/HttpProviderBase.md) | Http client Provider | [client/types.ts:93](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/client/types.ts#L93) |
 
 ## Defined in
 
-[client/types.ts:83](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/2844ad70d72104e3115623db03ff9cc5fbf702ee/src/client/types.ts#L83)
+[client/types.ts:85](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/client/types.ts#L85)

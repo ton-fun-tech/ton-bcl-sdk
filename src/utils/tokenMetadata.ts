@@ -76,6 +76,3 @@ export function loadTokenOnchainContent(slice: Slice) {
 
     return slice.loadDict( Dictionary.Keys.BigUint(256), SnakeContentDataDictValue)
 }
-
-
-

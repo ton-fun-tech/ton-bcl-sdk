@@ -1,3 +1,7 @@
+### 0.2.12
+- `parseStorage` function is removed
+- added `description` and `socialLinks` fields to `CoinMetadata`
+
 ### 0.2.11
 - better code for encoding/decoding on-chain metadata
 - now when creating new coin via `sendDeployCoin` `queryId` is passed to the coin, it makes coin deployment detection easier

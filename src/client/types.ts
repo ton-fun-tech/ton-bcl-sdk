@@ -7,6 +7,8 @@ export type CoinMetadata = {
     symbol: string; // Symbol of the coin
     decimals: string; // Number of decimals for the coin
     image: string; // URL to the image of the coin
+    description: string;
+    socialLinks?: string[]
 };
 
 export type Coin = {
