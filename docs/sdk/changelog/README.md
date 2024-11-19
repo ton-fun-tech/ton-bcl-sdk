@@ -1,4 +1,9 @@
 ### 0.2.11
+- better code for encoding/decoding on-chain metadata
+- now when creating new coin via `sendDeployCoin` `queryId` is passed to the coin, it makes coin deployment detection easier
+- added `socialLinks` field to `DeployCoinInput`
+
+### 0.2.11
 - `BclEventBuy.trader` now could be null
 
 ### 0.2.10
