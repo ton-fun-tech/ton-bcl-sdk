@@ -137,7 +137,7 @@ export class BclMaster implements Contract {
         // this way queryId is forwarded to coin contract
         // and could be used for deployment detection
         let forwardBody: Cell = beginCell()
-            .storeUint(crc32str('op::top_up'), 32)
+            .storeUint(0xd372158c, 32)
             .storeUint(input.queryId ?? 0, 64)
             .endCell()
 
