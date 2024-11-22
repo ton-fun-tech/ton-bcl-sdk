@@ -27,7 +27,7 @@ export type BclData = {
      * Amount of tokens be minted for liquidity on STON.fi
      */
     liqSupply: bigint
-    admin: Address
+    admin: Address|null
     /**
      * Address of the author
      */
@@ -299,7 +299,7 @@ export class BclJetton implements Contract {
             totalSupply: res.readBigNumber(),
             bclSupply: res.readBigNumber(),
             liqSupply: res.readBigNumber(),
-            admin: res.readAddress(),
+            admin: res.readAddressOpt(),
             author: res.readAddress(),
             content: res.readCell(),
             feeAddress: res.readAddress(),

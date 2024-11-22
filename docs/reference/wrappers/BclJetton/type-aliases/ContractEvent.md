@@ -10,4 +10,4 @@
 
 ## Defined in
 
-[wrappers/BclJetton.ts:83](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/51c29e03ce6783fe32c30630f21ec8c9f76516e2/src/wrappers/BclJetton.ts#L83)
+[wrappers/BclJetton.ts:83](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/94d6b89dd4da487f7f59e76bb49397e251522dcd/src/wrappers/BclJetton.ts#L83)

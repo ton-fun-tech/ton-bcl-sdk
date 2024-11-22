@@ -1,3 +1,6 @@
+### 0.2.13
+- `BclData.admin` is now nullable
+
 ### 0.2.12
 - `parseStorage` function is removed
 - added `description` and `socialLinks` fields to `CoinMetadata`

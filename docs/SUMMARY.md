@@ -16,7 +16,6 @@
 
 ## SDK Api reference
 
-
 * [BclSDK](reference/BclSDK/README.md)
     * [classes](reference/BclSDK/classes/README.md)
         * [BclSDK](reference/BclSDK/classes/BclSDK.md)
