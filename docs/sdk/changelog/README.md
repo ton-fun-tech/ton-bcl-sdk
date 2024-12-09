@@ -1,3 +1,6 @@
+### 0.2.15
+- removed `getCoinAddress` method to `BclMaster`
+
 ### 0.2.14
 - added `getCoinAddress` method to `BclMaster` 
 

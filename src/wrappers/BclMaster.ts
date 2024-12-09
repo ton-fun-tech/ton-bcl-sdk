@@ -218,33 +218,4 @@ export class BclMaster implements Contract {
             walletCode: res.stack.readCell(),
         };
     }
-
-    /**
-     * Returns address for coin by its input even if coin is not deployed yet
-     * Note that old versions of master contract don't support this method
-     */
-    async getCoinAddress(provider: ContractProvider, input: DeployCoinInput) {
-        let content = beginCell()
-            .store(storeTokenOnchainContent({
-                name: input.name,
-                description: input.description,
-                image: input.imageUrl,
-                symbol: input.symbol,
-                decimals: '9',
-                social_links: JSON.stringify(input.socialLinks),
-                ...input.extraMetadata
-            }))
-            .endCell()
-        // cell content, slice author_address, cell referral, int query_id
-        let stack = new TupleBuilder()
-
-        stack.writeCell(content)
-        stack.writeAddress(input.authorAddress)
-        stack.writeCell(input.referral)
-        stack.writeNumber(input.queryId)
-
-        let res = await provider.get('get_factory_data', stack.build())
-
-        return res.stack.readAddress()
-    }
 }
