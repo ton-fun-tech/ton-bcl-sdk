@@ -1,3 +1,6 @@
+### 0.2.14
+- added `getCoinAddress` method to `BclMaster` 
+
 ### 0.2.13
 - `BclData.admin` is now nullable
 
