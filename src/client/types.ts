@@ -44,7 +44,7 @@ export type Coin = {
     /**
      * Address of the author
      */
-    authorAddress: Address;
+    authorAddress: Address | null;
     /**
      * Is trading phase active
      * false means coin is listed on STON.fi you cant sell/buy coins via BCL contract

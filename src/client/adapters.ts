@@ -13,7 +13,7 @@ export function normalizeCoin(coin: AnyObject): Coin {
         bclSupply: BigInt(coin.bclSupply),
         liqSupply: BigInt(coin.liqSupply),
         lastTradeDate: coin.lastTradeDate,
-        authorAddress: Address.parse(coin.authorAddress),
+        authorAddress: coin.authorAddress === '' ? null : Address.parse(coin.authorAddress),
         tradingEnabled: coin.tradingEnabled,
         tonLiqCollected: BigInt(coin.tonLiqCollected),
         referral: coin.referral,
