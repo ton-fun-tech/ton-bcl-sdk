@@ -14,14 +14,14 @@ This event occurs when someone bought coins
 
 | Name | Type | Description | Defined in |
 | ------ | ------ | ------ | ------ |
-| `newSupply` | `bigint` | Current supply of the token | [client/types.ts:170](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/64dd7b20da5f56f7ea4c5b48591cd0c0026f6ac1/src/client/types.ts#L170) |
-| `referral` | `string` | - | [client/types.ts:175](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/64dd7b20da5f56f7ea4c5b48591cd0c0026f6ac1/src/client/types.ts#L175) |
-| `supplyDelta` | `bigint` | How much supply of coin is changed Basically this is amount of coins bought for `tonValue` | [client/types.ts:166](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/64dd7b20da5f56f7ea4c5b48591cd0c0026f6ac1/src/client/types.ts#L166) |
-| `tonLiqCollected` | `bigint` | Current amount of TON liquidity collected by contract | [client/types.ts:174](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/64dd7b20da5f56f7ea4c5b48591cd0c0026f6ac1/src/client/types.ts#L174) |
-| `tonValue` | `bigint` | Incoming ton value (without network fees) | [client/types.ts:161](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/64dd7b20da5f56f7ea4c5b48591cd0c0026f6ac1/src/client/types.ts#L161) |
-| `trader` | `Address` \| `null` | Address of the user | [client/types.ts:157](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/64dd7b20da5f56f7ea4c5b48591cd0c0026f6ac1/src/client/types.ts#L157) |
-| `type` | `"buy"` | - | [client/types.ts:153](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/64dd7b20da5f56f7ea4c5b48591cd0c0026f6ac1/src/client/types.ts#L153) |
+| `newSupply` | `bigint` | Current supply of the token | [client/types.ts:170](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/57ae5e6ea1d5ef20b2d4656add2e407869f7e2f0/src/client/types.ts#L170) |
+| `referral` | `string` | - | [client/types.ts:175](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/57ae5e6ea1d5ef20b2d4656add2e407869f7e2f0/src/client/types.ts#L175) |
+| `supplyDelta` | `bigint` | How much supply of coin is changed Basically this is amount of coins bought for `tonValue` | [client/types.ts:166](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/57ae5e6ea1d5ef20b2d4656add2e407869f7e2f0/src/client/types.ts#L166) |
+| `tonLiqCollected` | `bigint` | Current amount of TON liquidity collected by contract | [client/types.ts:174](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/57ae5e6ea1d5ef20b2d4656add2e407869f7e2f0/src/client/types.ts#L174) |
+| `tonValue` | `bigint` | Incoming ton value (without network fees) | [client/types.ts:161](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/57ae5e6ea1d5ef20b2d4656add2e407869f7e2f0/src/client/types.ts#L161) |
+| `trader` | `Address` \| `null` | Address of the user | [client/types.ts:157](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/57ae5e6ea1d5ef20b2d4656add2e407869f7e2f0/src/client/types.ts#L157) |
+| `type` | `"buy"` | - | [client/types.ts:153](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/57ae5e6ea1d5ef20b2d4656add2e407869f7e2f0/src/client/types.ts#L153) |
 
 ## Defined in
 
-[client/types.ts:152](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/64dd7b20da5f56f7ea4c5b48591cd0c0026f6ac1/src/client/types.ts#L152)
+[client/types.ts:152](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/57ae5e6ea1d5ef20b2d4656add2e407869f7e2f0/src/client/types.ts#L152)

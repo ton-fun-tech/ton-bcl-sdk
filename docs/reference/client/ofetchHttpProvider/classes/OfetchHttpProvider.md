@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[client/ofetchHttpProvider.ts:5](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/64dd7b20da5f56f7ea4c5b48591cd0c0026f6ac1/src/client/ofetchHttpProvider.ts#L5)
+[client/ofetchHttpProvider.ts:5](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/57ae5e6ea1d5ef20b2d4656add2e407869f7e2f0/src/client/ofetchHttpProvider.ts#L5)
 
 ***
 
@@ -72,4 +72,4 @@
 
 #### Defined in
 
-[client/ofetchHttpProvider.ts:9](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/64dd7b20da5f56f7ea4c5b48591cd0c0026f6ac1/src/client/ofetchHttpProvider.ts#L9)
+[client/ofetchHttpProvider.ts:9](https://github.com/ton-fun-tech/ton-bcl-sdk/blob/57ae5e6ea1d5ef20b2d4656add2e407869f7e2f0/src/client/ofetchHttpProvider.ts#L9)
