@@ -1,3 +1,6 @@
+### 0.2.16
+- `Coin.authorAddress` is now nullable
+
 ### 0.2.15
 - removed `getCoinAddress` method to `BclMaster`
 
